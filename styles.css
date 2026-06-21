@@ -1,0 +1,50 @@
+/* 
+  Name: Pranaya Bollu
+  Date: June 20, 2026
+  Course: Web Design & Development
+  Description: Base stylesheet for the HTML boilerplate template.
+  Provides simple, clean defaults to build future projects on top of.
+*/
+
+/* ===== Reset / Base Defaults ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
