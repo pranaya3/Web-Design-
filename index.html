@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- 
+<!--
   Name: Pranaya Bollu
-  Date: June 25, 2026
+  Date: July 1, 2026
   Course: Web Design & Development
-  Description: Home page of my personal website.
+  Description: Home page of my personal website with a Hero Section.
 -->
 <html lang="en">
 
@@ -11,13 +11,13 @@
   <!-- Character encoding ensures special characters display correctly -->
   <meta charset="utf-8">
 
-  <!-- Viewport meta tag makes the page mobile-friendly / responsive -->
+  <!-- Viewport meta tag makes the page mobile-friendly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title shown in the browser tab -->
   <title>Home | Pranaya Bollu</title>
 
-  <!-- Link to external CSS for styling -->
+  <!-- Link to external CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -28,7 +28,7 @@
        Contains website title and navigation
        ============================ -->
   <header>
-    <h1>Pranaya Bollu</h1>
+    <h2>Pranaya Bollu</h2>
 
     <nav>
       Home | About
@@ -36,12 +36,32 @@
   </header>
 
   <!-- ============================
+       HERO SECTION
+       Hero section with welcome message
+       ============================ -->
+  <section class="hero">
+
+    <h1>Welcome to My Website</h1>
+
+    <p>
+      Hello! I'm Pranaya Bollu. Explore my website to learn more about my
+      interests, experiences, and goals in web design, technology,
+      photography, and personal growth.
+    </p>
+
+    <a href="#main-content" class="hero-button">
+      Learn More
+    </a>
+
+  </section>
+
+  <!-- ============================
        MAIN CONTENT
        Primary page content goes here
        ============================ -->
-  <main>
+  <main id="main-content">
 
-    <h3>Welcome to My Website</h3>
+    <h3>About Me</h3>
 
     <p>
       Hello! My name is Pranaya Bollu, and welcome to my personal website.
@@ -63,7 +83,7 @@
        Contains name and current date
        ============================ -->
   <footer>
-    <p>Pranaya Bollu &mdash; June 25, 2026</p>
+    <p>Pranaya Bollu &mdash; July 1, 2026</p>
   </footer>
 
 </body>
