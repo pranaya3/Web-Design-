@@ -1,0 +1,97 @@
+/* General Styling */
+
+body {
+
+font-family:Arial, sans-serif;
+
+background-color:#FFF8F5;
+
+color:#5C4A5A;
+
+margin:0;
+
+}
+
+
+main {
+
+padding:40px;
+
+text-align:center;
+
+}
+
+
+h1 {
+
+color:#D98CB3;
+
+}
+
+
+h2 {
+
+color:#B497D6;
+
+}
+
+
+p {
+
+font-size:18px;
+
+line-height:1.6;
+
+}
+
+
+
+/* Reflection Styling */
+
+.reflection-box {
+
+background-color:white;
+
+border:2px solid #D98CB3;
+
+padding:25px;
+
+margin:30px;
+
+border-radius:15px;
+
+}
+
+
+
+.first-paragraph::first-letter {
+
+font-size:40px;
+
+color:#D98CB3;
+
+font-weight:bold;
+
+}
+
+
+
+.reflection-box p:not(.first-paragraph){
+
+text-indent:40px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+text-align:center;
+
+padding:20px;
+
+background-color:#F7D6E6;
+
+}
