@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F2;
+    color: #5A4A4A;
+    margin: 0;
+}
+
+header {
+    background-color: #F8D7E8;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7A5C99;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+}
+
+h1 {
+    color: #7A5C99;
+}
+
+h2 {
+    color: #C46BAE;
+}
+
+.pdf-link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #F8D7E8;
+    border: 2px solid #D6B3FF;
+    border-radius: 10px;
+    color: #7A5C99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-link:hover {
+    background-color: #F3E5D8;
+}
+
+footer {
+    background-color: #F8D7E8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
