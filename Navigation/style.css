@@ -39,3 +39,95 @@ footer {
     margin-right: 8px;
 
 }
+
+
+
+/* ==========================
+Print Styling - About Page
+========================== */
+
+@media print {
+
+
+    @page {
+
+        margin: 1in;
+
+    }
+
+
+    body {
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        color: black;
+
+        background: white;
+
+    }
+
+
+    header,
+    nav,
+    .profile-image,
+    .resume-video,
+    figure,
+    figcaption {
+
+        display: none;
+
+    }
+
+
+    h1 {
+
+        color: black;
+
+        font-size: 24pt;
+
+    }
+
+
+    h2 {
+
+        color: black;
+
+        font-size: 16pt;
+
+    }
+
+
+    p,
+    li {
+
+        color: black;
+
+        font-size: 12pt;
+
+        line-height: 1.4;
+
+    }
+
+
+    footer {
+
+        background: none;
+
+        color: black;
+
+        text-align: left;
+
+        padding: 0;
+
+    }
+
+
+    footer p {
+
+        color: black;
+
+        font-size: 12pt;
+
+    }
+
+}
