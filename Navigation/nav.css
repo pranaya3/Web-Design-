@@ -72,3 +72,22 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+
+/* About Page Media Styling */
+
+main img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+
+main video {
+    width: 550px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+}
