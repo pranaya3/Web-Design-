@@ -1,4 +1,37 @@
 /* ==========================
+Image and Video Styling
+========================== */
+
+main img {
+
+    width: 350px;
+
+    height: auto;
+
+    border-radius: 15px;
+
+    margin: 20px auto;
+
+}
+
+
+main video {
+
+    width: 550px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 15px;
+
+    margin: 20px auto;
+
+}
+
+
+
+/* ==========================
 Footer Styling
 ========================== */
 
@@ -39,6 +72,7 @@ footer {
     margin-right: 8px;
 
 }
+
 
 
 /* ==========================
