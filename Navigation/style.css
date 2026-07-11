@@ -1,32 +1,23 @@
+ 
 /* ==========================
 Image and Video Styling
 ========================== */
 
-main img {
-
+img {
+    max-width: 350px;
     width: 350px;
-
     height: auto;
-
     border-radius: 15px;
-
     margin: 20px auto;
-
 }
 
 
-main video {
-
+video {
+    max-width: 550px;
     width: 550px;
-
-    max-width: 100%;
-
     height: auto;
-
     border-radius: 15px;
-
     margin: 20px auto;
-
 }
 
 
