@@ -41,13 +41,11 @@ footer {
 }
 
 
-
 /* ==========================
 Print Styling - About Page
 ========================== */
 
 @media print {
-
 
     @page {
 
@@ -69,19 +67,26 @@ Print Styling - About Page
 
     header,
     nav,
-    .profile-image,
-    .resume-video,
-    figure,
-    figcaption {
+    img,
+    video,
+    figure {
 
         display: none;
 
     }
 
 
-    h1 {
+    h1,
+    h2,
+    p,
+    li {
 
         color: black;
+
+    }
+
+
+    h1 {
 
         font-size: 24pt;
 
@@ -90,8 +95,6 @@ Print Styling - About Page
 
     h2 {
 
-        color: black;
-
         font-size: 16pt;
 
     }
@@ -99,8 +102,6 @@ Print Styling - About Page
 
     p,
     li {
-
-        color: black;
 
         font-size: 12pt;
 
@@ -111,7 +112,9 @@ Print Styling - About Page
 
     footer {
 
-        background: none;
+        background-image: none;
+
+        background-color: white;
 
         color: black;
 
