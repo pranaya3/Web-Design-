@@ -3,7 +3,6 @@ Media Styling
 ========================== */
 
 .profile-image {
-
     width: 300px;
     max-width: 100%;
     height: auto;
@@ -15,19 +14,14 @@ Media Styling
     margin: 20px;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .profile-image:hover {
-
     transform: scale(1.05);
     box-shadow: 0 0 10px gray;
-
 }
 
-
 .resume-video {
-
     width: 400px;
     max-width: 100%;
 
@@ -36,21 +30,44 @@ Media Styling
 
     padding: 5px;
     margin: 20px;
-
 }
-
 
 figure {
-
     margin: 30px auto;
-
 }
 
-
 figcaption {
-
     margin-top: 10px;
     font-style: italic;
     color: #5C4A5A;
+}
 
+/* ==========================
+Footer Styling
+========================== */
+
+footer {
+    background-image: url("images/footer-background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: white;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+
+    vertical-align: middle;
+
+    margin-right: 8px;
 }
