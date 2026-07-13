@@ -15,8 +15,6 @@ header {
 
     padding: 15px 40px;
 
-    flex-wrap: nowrap;
-
 }
 
 
@@ -104,8 +102,6 @@ Hamburger Menu
 ========================== */
 
 
-/* Hide hamburger on desktop */
-
 .hamburger {
 
     display: none;
@@ -124,23 +120,25 @@ Mobile View
 
     header {
 
+        flex-wrap: wrap;
+
         padding: 15px 20px;
 
     }
 
 
 
-    /* Hide navigation menu */
+    header img {
 
-    nav {
+        width: 50px;
 
-        display: none;
+        height: 50px;
 
     }
 
 
 
-    /* Show hamburger */
+    /* Show Hamburger */
 
     .hamburger {
 
@@ -156,14 +154,37 @@ Mobile View
 
 
 
-    header img {
+    /* Hide Menu Initially */
 
-        width: 50px;
+    nav {
 
-        height: 50px;
+        display: none;
+
+        width: 100%;
 
     }
 
+
+
+    /* Menu After Clicking Hamburger */
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding-top: 20px;
+
+    }
+
+
+
+    nav li a {
+
+        font-size: 18px;
+
+    }
 
 
 }
