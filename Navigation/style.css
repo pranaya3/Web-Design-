@@ -1,4 +1,56 @@
 /* ==========================
+General Page Styling
+========================== */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #FFF8F5;
+
+    color: #5C4A5A;
+
+}
+
+
+main {
+
+    padding: 40px;
+
+    text-align: center;
+
+}
+
+
+h1 {
+
+    color: #D98CB3;
+
+    font-size: 36px;
+
+}
+
+
+h2 {
+
+    color: #B497D6;
+
+}
+
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==========================
 About Page Grid Layout
 ========================== */
 
@@ -40,9 +92,9 @@ Image and Video Styling
 
 .profile-image {
 
-    max-width: 200px;
-
     width: 200px;
+
+    max-width: 100%;
 
     height: auto;
 
@@ -57,11 +109,12 @@ Image and Video Styling
 }
 
 
+
 .resume-video {
 
-    max-width: 450px;
-
     width: 100%;
+
+    max-width: 450px;
 
     height: auto;
 
@@ -70,6 +123,7 @@ Image and Video Styling
     margin: 20px auto;
 
 }
+
 
 
 figcaption {
@@ -147,6 +201,7 @@ textarea {
 }
 
 
+
 button {
 
     margin-top: 20px;
@@ -164,6 +219,7 @@ button {
     cursor: pointer;
 
 }
+
 
 
 button:hover {
@@ -196,6 +252,7 @@ footer {
 }
 
 
+
 .contact-info p {
 
     margin: 12px;
@@ -203,6 +260,7 @@ footer {
     font-size: 18px;
 
 }
+
 
 
 .footer-icon {
@@ -236,11 +294,29 @@ Responsive Layout
     }
 
 
+
     .about-text {
 
         text-align: center;
 
     }
+
+
+
+    .profile-image {
+
+        width: 180px;
+
+    }
+
+
+
+    .resume-video {
+
+        width: 100%;
+
+    }
+
 
 
 }
@@ -262,6 +338,7 @@ Print Styling - About Page
     }
 
 
+
     body {
 
         font-family: Georgia, "Times New Roman", serif;
@@ -271,6 +348,7 @@ Print Styling - About Page
         background: white;
 
     }
+
 
 
     header,
@@ -284,6 +362,7 @@ Print Styling - About Page
     }
 
 
+
     h1,
     h2,
     p,
@@ -294,6 +373,7 @@ Print Styling - About Page
     }
 
 
+
     h1 {
 
         font-size: 24pt;
@@ -301,11 +381,13 @@ Print Styling - About Page
     }
 
 
+
     h2 {
 
         font-size: 16pt;
 
     }
+
 
 
     p,
@@ -316,6 +398,7 @@ Print Styling - About Page
         line-height: 1.4;
 
     }
+
 
 
     footer {
@@ -333,6 +416,7 @@ Print Styling - About Page
     }
 
 
+
     footer p {
 
         color: black;
@@ -340,5 +424,6 @@ Print Styling - About Page
         font-size: 12pt;
 
     }
+
 
 }
