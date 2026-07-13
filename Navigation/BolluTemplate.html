@@ -44,7 +44,7 @@ File: BolluTemplate.html
 
     <!-- Mobile Hamburger Icon -->
 
-    <div class="hamburger">
+    <div class="hamburger" onclick="toggleMenu()">
 
         ☰
 
@@ -52,7 +52,7 @@ File: BolluTemplate.html
 
 
 
-    <nav>
+    <nav id="mobile-nav">
 
 
         <ul>
@@ -163,6 +163,33 @@ File: BolluTemplate.html
 
 
 </footer>
+
+
+
+<!-- Hamburger Menu Script -->
+
+<script>
+
+function toggleMenu() {
+
+    var menu = document.getElementById("mobile-nav");
+
+
+    if (menu.style.display === "block") {
+
+        menu.style.display = "none";
+
+    } 
+    
+    else {
+
+        menu.style.display = "block";
+
+    }
+
+}
+
+</script>
 
 
 
