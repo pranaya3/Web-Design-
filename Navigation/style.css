@@ -1,8 +1,11 @@
+/* ==========================
+   General Website Styling
+========================== */
+
 body {
 
     margin: 0;
 
-    /* Custom font from Google Fonts applied to site */
     font-family: "Poppins", Arial, sans-serif;
 
     background-color: #FFF8F5;
@@ -10,7 +13,6 @@ body {
     color: #5C4A5A;
 
 }
-
 
 
 main {
@@ -23,10 +25,6 @@ main {
 
 
 
-/* ==========================
-Custom styles for all <h1> elements
-========================== */
-
 h1 {
 
     color: #D98CB3;
@@ -35,15 +33,11 @@ h1 {
 
     letter-spacing: 2px;
 
-    text-shadow: 2px 2px 8px rgba(217, 140, 179, 0.5);
+    text-shadow: 2px 2px 8px rgba(217,140,179,0.5);
 
 }
 
 
-
-/* ==========================
-Custom styles for all <h2> elements
-========================== */
 
 h2 {
 
@@ -69,8 +63,10 @@ p {
 
 
 
+
+
 /* ==========================
-About Page Grid Layout
+   About Page
 ========================== */
 
 .about-grid {
@@ -82,8 +78,6 @@ About Page Grid Layout
     gap: 40px;
 
     padding: 40px;
-
-    align-items: start;
 
 }
 
@@ -108,14 +102,15 @@ About Page Grid Layout
 
 
 /* ==========================
-Projects Page Grid Layout
+   Projects Page
 ========================== */
+
 
 .projects-grid {
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
 
     gap: 35px;
 
@@ -135,7 +130,7 @@ Projects Page Grid Layout
 
     padding: 25px;
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: .3s;
 
 }
 
@@ -145,15 +140,7 @@ Projects Page Grid Layout
 
     transform: translateY(-5px);
 
-    box-shadow: 0 5px 15px rgba(217,140,179,0.3);
-
-}
-
-
-
-.project-card figure {
-
-    margin: 0;
+    box-shadow: 0 5px 15px rgba(217,140,179,.3);
 
 }
 
@@ -161,25 +148,13 @@ Projects Page Grid Layout
 
 .project-card img {
 
-    width: 100%;
+    width:100%;
 
-    max-width: 300px;
+    max-width:300px;
 
-    height: auto;
+    border-radius:12px;
 
-    border-radius: 12px;
-
-    border: 3px solid #D98CB3;
-
-}
-
-
-
-.project-card figcaption {
-
-    margin-top: 10px;
-
-    font-style: italic;
+    border:3px solid #D98CB3;
 
 }
 
@@ -187,7 +162,7 @@ Projects Page Grid Layout
 
 .project-info {
 
-    text-align: center;
+    text-align:center;
 
 }
 
@@ -196,22 +171,19 @@ Projects Page Grid Layout
 
 
 /* ==========================
-Image and Video Styling
+   Images & Video
 ========================== */
+
 
 .profile-image {
 
-    width: 200px;
+    width:200px;
 
-    max-width: 100%;
+    border-radius:15px;
 
-    border-radius: 15px;
+    border:3px solid #D98CB3;
 
-    border: 3px solid #D98CB3;
-
-    padding: 5px;
-
-    margin: 20px auto;
+    padding:5px;
 
 }
 
@@ -219,31 +191,11 @@ Image and Video Styling
 
 .resume-video {
 
-    width: 100%;
+    width:100%;
 
-    max-width: 450px;
+    max-width:450px;
 
-    border-radius: 15px;
-
-}
-
-
-
-img {
-
-    max-width: 100%;
-
-    height: auto;
-
-}
-
-
-
-figcaption {
-
-    font-style: italic;
-
-    color: #5C4A5A;
+    border-radius:15px;
 
 }
 
@@ -252,16 +204,17 @@ figcaption {
 
 
 /* ==========================
-Reflection Page Styling
+   Reflection Page
 ========================== */
+
 
 .reflection-page {
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
 
-    padding: 40px;
+    padding:40px;
 
 }
 
@@ -269,19 +222,19 @@ Reflection Page Styling
 
 .reflection-card {
 
-    background-color: white;
+    background:white;
 
-    max-width: 800px;
+    max-width:800px;
 
-    width: 100%;
+    width:100%;
 
-    padding: 40px;
+    padding:40px;
 
-    border-radius: 15px;
+    border-radius:15px;
 
-    border: 2px solid #D98CB3;
+    border:2px solid #D98CB3;
 
-    box-shadow: 0 5px 15px rgba(217,140,179,0.2);
+    box-shadow:0 5px 15px rgba(217,140,179,.2);
 
 }
 
@@ -289,9 +242,7 @@ Reflection Page Styling
 
 .reflection-card p {
 
-    text-align: left;
-
-    margin-bottom: 20px;
+    text-align:left;
 
 }
 
@@ -300,145 +251,69 @@ Reflection Page Styling
 
 
 /* ==========================
-Skills Page Styling
+   Skills Table Styling
 ========================== */
+
 
 .skills-page {
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
-
-    padding: 40px;
+    justify-content:center;
 
 }
 
 
 
-.skills-page .reflection-card {
+.skills-table {
 
-    max-width: 800px;
+    width:100%;
 
-}
+    border-collapse:collapse;
 
+    margin-top:30px;
 
-
-.skills-page ul {
-
-    list-style: none;
-
-    padding: 0;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-
-    margin-bottom: 35px;
+    background:white;
 
 }
 
 
 
-.skills-page li {
+.skills-table caption {
 
-    background-color: white;
+    caption-side:top;
 
-    border: 2px solid #D98CB3;
+    font-size:22px;
 
-    border-radius: 12px;
+    font-weight:bold;
 
-    padding: 15px;
+    color:#D98CB3;
 
-    font-size: 18px;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:15px;
 
 }
 
 
 
-.skills-page li:hover {
+.skills-table th {
 
-    transform: translateY(-5px);
+    background-color:#B497D6;
 
-    box-shadow: 0 5px 15px rgba(217,140,179,0.3);
+    color:white;
 
-}
+    padding:15px;
 
-
-
-
-
-/* ==========================
-Table Styling
-========================== */
-
-
-.table-container {
-
-    width: 100%;
-
-    overflow-x: auto;
-
-    margin: 30px auto;
+    border:2px solid #D98CB3;
 
 }
 
 
 
-table {
+.skills-table td {
 
-    width: 100%;
+    padding:15px;
 
-    border-collapse: collapse;
-
-    background-color: white;
-
-    border: 2px solid #D98CB3;
-
-}
-
-
-
-caption {
-
-    caption-side: top;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-    color: #D98CB3;
-
-    padding: 15px;
-
-}
-
-
-
-th {
-
-    background-color: #B497D6;
-
-    color: white;
-
-    padding: 15px;
-
-    border: 1px solid #D98CB3;
-
-}
-
-
-
-td {
-
-    padding: 15px;
-
-    border: 1px solid #D98CB3;
-
-    text-align: center;
+    border:2px solid #D98CB3;
 
 }
 
@@ -446,30 +321,29 @@ td {
 
 /* First and third rows same color */
 
-tbody tr:nth-child(1),
-tbody tr:nth-child(3) {
+.skills-table tbody tr:nth-child(1),
 
-    background-color: #FFF0F7;
+.skills-table tbody tr:nth-child(3) {
 
-}
-
-
-
-/* Alternating row colors */
-
-tbody tr:nth-child(even) {
-
-    background-color: #F8F0FF;
+    background-color:#FCE4EC;
 
 }
 
 
 
-/* Hover effect */
+/* Alternate row colors */
 
-tbody tr:hover {
+.skills-table tbody tr:nth-child(even) {
 
-    background-color: #FFE4F0;
+    background-color:#F8F0FF;
+
+}
+
+
+
+.skills-table tbody tr:nth-child(odd) {
+
+    background-color:#FFF8F5;
 
 }
 
@@ -478,22 +352,23 @@ tbody tr:hover {
 
 
 /* ==========================
-Contact Form Styling
+   Contact Form
 ========================== */
+
 
 form {
 
-    max-width: 600px;
+    max-width:600px;
 
-    margin: 30px auto;
+    margin:30px auto;
 
-    background-color: white;
+    background:white;
 
-    padding: 30px;
+    padding:30px;
 
-    border: 2px solid #D98CB3;
+    border:2px solid #D98CB3;
 
-    border-radius: 15px;
+    border-radius:15px;
 
 }
 
@@ -501,13 +376,13 @@ form {
 
 label {
 
-    display: block;
+    display:block;
 
-    text-align: left;
+    text-align:left;
 
-    margin-top: 15px;
+    margin-top:15px;
 
-    font-weight: bold;
+    font-weight:bold;
 
 }
 
@@ -517,17 +392,17 @@ input,
 select,
 textarea {
 
-    width: 100%;
+    width:100%;
 
-    padding: 12px;
+    padding:12px;
 
-    margin-top: 8px;
+    margin-top:8px;
 
-    border: 1px solid #B497D6;
+    border:1px solid #B497D6;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    box-sizing: border-box;
+    box-sizing:border-box;
 
 }
 
@@ -535,7 +410,7 @@ textarea {
 
 textarea {
 
-    height: 150px;
+    height:150px;
 
 }
 
@@ -547,7 +422,7 @@ button {
 
     padding:12px 25px;
 
-    background-color:#D98CB3;
+    background:#D98CB3;
 
     color:white;
 
@@ -555,13 +430,15 @@ button {
 
     border-radius:8px;
 
+    cursor:pointer;
+
 }
 
 
 
 button:hover {
 
-    background-color:#B497D6;
+    background:#B497D6;
 
 }
 
@@ -570,8 +447,9 @@ button:hover {
 
 
 /* ==========================
-Footer Styling
+   Footer
 ========================== */
+
 
 footer {
 
@@ -599,7 +477,7 @@ footer {
 
     margin-right:8px;
 
-    transition:transform .3s ease, color .3s ease, text-shadow .3s ease;
+    transition:.3s;
 
 }
 
@@ -607,13 +485,9 @@ footer {
 
 .footer-icon:hover {
 
-    transform:scale(1.4) translateY(-3px);
+    transform:scale(1.4);
 
     color:#D98CB3;
-
-    text-shadow:0 0 12px #D98CB3;
-
-    cursor:pointer;
 
 }
 
@@ -622,8 +496,9 @@ footer {
 
 
 /* ==========================
-Responsive Layout
+   Responsive Design
 ========================== */
+
 
 @media screen and (max-width:768px) {
 
@@ -635,11 +510,13 @@ Responsive Layout
     }
 
 
+
     .about-grid {
 
         grid-template-columns:1fr;
 
     }
+
 
 
     .projects-grid {
@@ -649,34 +526,6 @@ Responsive Layout
     }
 
 
-    .skills-page ul {
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    table {
-
-        font-size:14px;
-
-    }
-
-
-    th,
-    td {
-
-        padding:10px;
-
-    }
-
-
-    .table-container {
-
-        overflow-x:auto;
-
-    }
-
 
     h1 {
 
@@ -685,11 +534,27 @@ Responsive Layout
     }
 
 
+
     p {
 
         font-size:16px;
 
     }
+
+
+
+    /* Responsive Table */
+
+    .skills-table {
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
 
 }
 
@@ -698,59 +563,54 @@ Responsive Layout
 
 
 /* ==========================
-Print Styling
+   Print Styling
 ========================== */
+
 
 @media print {
 
 
-    @page {
+body {
 
-        margin:1in;
+    background:white;
 
-    }
+    color:black;
 
+    font-family:Georgia,"Times New Roman",serif;
 
-    body {
-
-        font-family:Georgia,"Times New Roman",serif;
-
-        background:white;
-
-        color:black;
-
-    }
+}
 
 
-    header,
-    nav,
-    img,
-    video,
-    figure {
 
-        display:none;
+header,
+nav,
+img,
+video {
 
-    }
+    display:none;
 
-
-    h1,
-    h2,
-    p,
-    li,
-    td,
-    th {
-
-        color:black;
-
-    }
+}
 
 
-    footer {
 
-        background:none;
+h1,
+h2,
+p,
+li {
 
-        color:black;
+    color:black;
 
-    }
+}
+
+
+
+footer {
+
+    background:none;
+
+    color:black;
+
+}
+
 
 }
