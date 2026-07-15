@@ -1,429 +1,75 @@
 /* ==========================
-General Page Styling
+Projects Page Grid Layout
 ========================== */
 
-body {
-
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-
-    background-color: #FFF8F5;
-
-    color: #5C4A5A;
-
-}
-
-
-main {
-
-    padding: 40px;
-
-    text-align: center;
-
-}
-
-
-h1 {
-
-    color: #D98CB3;
-
-    font-size: 36px;
-
-}
-
-
-h2 {
-
-    color: #B497D6;
-
-}
-
-
-p {
-
-    font-size: 18px;
-
-    line-height: 1.6;
-
-}
-
-
-
-/* ==========================
-About Page Grid Layout
-========================== */
-
-
-.about-grid {
+.projects-grid {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
-    gap: 40px;
+    gap: 35px;
 
-    padding: 40px;
-
-    align-items: start;
+    margin-top: 30px;
 
 }
 
+.project-card {
 
-.about-text {
+    display: grid;
 
-    text-align: left;
+    grid-template-columns: 1fr 2fr;
 
-}
+    gap: 25px;
 
-
-.about-media {
-
-    text-align: center;
-
-}
-
-
-
-/* ==========================
-Image and Video Styling
-========================== */
-
-
-.profile-image {
-
-    width: 200px;
-
-    max-width: 100%;
-
-    height: auto;
-
-    border-radius: 15px;
-
-    border: 3px solid #D98CB3;
-
-    padding: 5px;
-
-    margin: 20px auto;
-
-}
-
-
-
-.resume-video {
-
-    width: 100%;
-
-    max-width: 450px;
-
-    height: auto;
-
-    border-radius: 15px;
-
-    margin: 20px auto;
-
-}
-
-
-
-figcaption {
-
-    font-style: italic;
-
-    color: #5C4A5A;
-
-}
-
-
-
-/* ==========================
-Contact Form Styling
-========================== */
-
-
-form {
-
-    max-width: 600px;
-
-    margin: 30px auto;
+    align-items: center;
 
     background-color: white;
-
-    padding: 30px;
 
     border: 2px solid #D98CB3;
 
     border-radius: 15px;
 
-}
-
-
-label {
-
-    display: block;
-
-    text-align: left;
-
-    margin-top: 15px;
-
-    font-weight: bold;
-
-    color: #5C4A5A;
+    padding: 25px;
 
 }
 
+.project-card figure {
 
-input,
-select,
-textarea {
+    margin: 0;
+
+}
+
+.project-card img {
 
     width: 100%;
 
-    padding: 12px;
+    max-width: 300px;
 
-    margin-top: 8px;
+    height: auto;
 
-    border: 1px solid #B497D6;
+    border-radius: 12px;
 
-    border-radius: 8px;
-
-    font-size: 16px;
-
-    box-sizing: border-box;
+    border: 3px solid #D98CB3;
 
 }
 
+.project-card figcaption {
 
-textarea {
+    margin-top: 10px;
 
-    height: 150px;
-
-}
-
-
-
-button {
-
-    margin-top: 20px;
-
-    padding: 12px 25px;
-
-    background-color: #D98CB3;
-
-    color: white;
-
-    border: none;
-
-    border-radius: 8px;
-
-    cursor: pointer;
+    font-style: italic;
 
 }
 
+.project-info {
 
-
-button:hover {
-
-    background-color: #B497D6;
+    text-align: left;
 
 }
 
+.project-info h2 {
 
-
-/* ==========================
-Footer Styling
-========================== */
-
-
-footer {
-
-    background-image: url("images/footer-background.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
-    text-align: center;
-
-    padding: 30px;
-
-    color: white;
-
-}
-
-
-
-.contact-info p {
-
-    margin: 12px;
-
-    font-size: 18px;
-
-}
-
-
-
-.footer-icon {
-
-    width: 20px;
-
-    height: 20px;
-
-    vertical-align: middle;
-
-    margin-right: 8px;
-
-}
-
-
-
-/* ==========================
-Responsive Layout
-========================== */
-
-
-@media screen and (max-width: 768px) {
-
-
-    .about-grid {
-
-        grid-template-columns: 1fr;
-
-        padding: 20px;
-
-    }
-
-
-
-    .about-text {
-
-        text-align: center;
-
-    }
-
-
-
-    .profile-image {
-
-        width: 180px;
-
-    }
-
-
-
-    .resume-video {
-
-        width: 100%;
-
-    }
-
-
-
-}
-
-
-
-/* ==========================
-Print Styling - About Page
-========================== */
-
-
-@media print {
-
-
-    @page {
-
-        margin: 1in;
-
-    }
-
-
-
-    body {
-
-        font-family: Georgia, "Times New Roman", serif;
-
-        color: black;
-
-        background: white;
-
-    }
-
-
-
-    header,
-    nav,
-    img,
-    video,
-    figure {
-
-        display: none;
-
-    }
-
-
-
-    h1,
-    h2,
-    p,
-    li {
-
-        color: black;
-
-    }
-
-
-
-    h1 {
-
-        font-size: 24pt;
-
-    }
-
-
-
-    h2 {
-
-        font-size: 16pt;
-
-    }
-
-
-
-    p,
-    li {
-
-        font-size: 12pt;
-
-        line-height: 1.4;
-
-    }
-
-
-
-    footer {
-
-        background-image: none;
-
-        background-color: white;
-
-        color: black;
-
-        text-align: left;
-
-        padding: 0;
-
-    }
-
-
-
-    footer p {
-
-        color: black;
-
-        font-size: 12pt;
-
-    }
-
+    margin-top: 0;
 
 }
