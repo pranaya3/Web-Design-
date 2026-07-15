@@ -21,7 +21,9 @@ main {
 }
 
 
-/* Custom styles for all <h1> elements */
+/* ==========================
+Custom styles for all <h1> elements
+========================== */
 
 h1 {
 
@@ -36,7 +38,9 @@ h1 {
 }
 
 
-/* Custom styles for all <h2> elements */
+/* ==========================
+Custom styles for all <h2> elements
+========================== */
 
 h2 {
 
@@ -91,6 +95,7 @@ About Page Grid Layout
     text-align: center;
 
 }
+
 
 
 /* ==========================
@@ -187,6 +192,7 @@ Projects Page Grid Layout
 }
 
 
+
 /* ==========================
 Image and Video Styling
 ========================== */
@@ -241,6 +247,7 @@ figcaption {
     color: #5C4A5A;
 
 }
+
 
 
 /* ==========================
@@ -333,6 +340,7 @@ button:hover {
 }
 
 
+
 /* ==========================
 Footer Styling
 ========================== */
@@ -363,6 +371,7 @@ footer {
 }
 
 
+
 /* Footer Icon Hover Animation */
 
 .footer-icon {
@@ -391,6 +400,49 @@ footer {
     cursor: pointer;
 
 }
+
+
+
+/* ==========================
+Reflection Page Styling
+========================== */
+
+.reflection-page {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+
+.reflection-card {
+
+    background-color: white;
+
+    max-width: 800px;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    border: 2px solid #D98CB3;
+
+    box-shadow: 0 5px 15px rgba(217, 140, 179, 0.2);
+
+}
+
+
+.reflection-card p {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
 
 
 /* ==========================
@@ -483,6 +535,7 @@ Responsive Layout
     }
 
 }
+
 
 
 /* ==========================
