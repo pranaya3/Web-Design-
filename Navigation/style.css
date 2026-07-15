@@ -367,11 +367,13 @@ footer {
 
 .footer-icon:hover {
 
-    transform: scale(1.3);
+    transform: scale(1.4) translateY(-3px);
 
     color: #D98CB3;
 
-    text-shadow: 0 0 10px #D98CB3;
+    text-shadow: 0 0 12px #D98CB3;
+
+    cursor: pointer;
 
 }
 
