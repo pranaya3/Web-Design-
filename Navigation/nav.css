@@ -2,7 +2,6 @@
 Navigation Header
 ========================== */
 
-
 header {
 
     display: flex;
@@ -17,8 +16,6 @@ header {
 
 }
 
-
-
 /* Logo */
 
 header img {
@@ -31,9 +28,9 @@ header img {
 
 }
 
-
-
-/* Navigation Menu */
+/* ==========================
+Navigation Menu
+========================== */
 
 nav {
 
@@ -43,19 +40,11 @@ nav {
 
 }
 
-
-
 nav ul {
 
     display: flex;
 
-    flex-direction: row;
-
-    align-items: center;
-
-    list-style-type: none;
-
-    gap: 20px;
+    list-style: none;
 
     margin: 0;
 
@@ -63,9 +52,15 @@ nav ul {
 
 }
 
+nav ul li {
 
+    position: relative;
+
+}
 
 nav li a {
+
+    display: block;
 
     text-decoration: none;
 
@@ -75,15 +70,13 @@ nav li a {
 
     font-weight: bold;
 
-    padding: 8px 12px;
+    padding: 10px 15px;
 
     border-radius: 10px;
 
     white-space: nowrap;
 
 }
-
-
 
 /* Hover Effect */
 
@@ -95,12 +88,59 @@ nav li a:hover {
 
 }
 
+/* ==========================
+Dropdown Menu
+========================== */
 
+nav ul li ul {
+
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    background-color: #F7D6E6;
+
+    min-width: 220px;
+
+    border-radius: 10px;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+
+}
+
+nav ul li:hover > ul {
+
+    display: block;
+
+}
+
+nav ul li ul li {
+
+    width: 100%;
+
+}
+
+nav ul li ul li a {
+
+    padding: 12px 16px;
+
+    border-radius: 0;
+
+}
 
 /* ==========================
 Hamburger Menu
 ========================== */
-
 
 .hamburger {
 
@@ -108,15 +148,11 @@ Hamburger Menu
 
 }
 
-
-
 /* ==========================
 Mobile View
 ========================== */
 
-
 @media screen and (max-width: 768px) {
-
 
     header {
 
@@ -126,8 +162,6 @@ Mobile View
 
     }
 
-
-
     header img {
 
         width: 50px;
@@ -135,8 +169,6 @@ Mobile View
         height: 50px;
 
     }
-
-
 
     /* Show Hamburger */
 
@@ -152,8 +184,6 @@ Mobile View
 
     }
 
-
-
     /* Hide Menu Initially */
 
     nav {
@@ -164,27 +194,60 @@ Mobile View
 
     }
 
-
-
-    /* Menu After Clicking Hamburger */
+    /* Mobile Navigation */
 
     nav ul {
 
         flex-direction: column;
 
-        gap: 15px;
+        width: 100%;
+
+        gap: 0;
 
         padding-top: 20px;
 
     }
 
+    nav ul li {
 
+        width: 100%;
+
+    }
 
     nav li a {
+
+        display: block;
+
+        padding: 15px;
 
         font-size: 18px;
 
     }
 
+    /* Mobile Dropdown */
+
+    nav ul li ul {
+
+        display: block;
+
+        position: static;
+
+        box-shadow: none;
+
+        background-color: #FDECF3;
+
+        min-width: 100%;
+
+        margin-left: 20px;
+
+    }
+
+    nav ul li ul li a {
+
+        font-size: 16px;
+
+        padding: 10px 15px;
+
+    }
 
 }
