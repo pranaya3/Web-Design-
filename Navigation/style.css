@@ -2,7 +2,8 @@ body {
 
     margin: 0;
 
-    font-family: Arial, sans-serif;
+    /* Custom font from Google Fonts applied to site */
+    font-family: "Poppins", Arial, sans-serif;
 
     background-color: #FFF8F5;
 
@@ -20,18 +21,32 @@ main {
 }
 
 
+/* Custom styles for all <h1> elements */
+
 h1 {
 
     color: #D98CB3;
 
     font-size: 36px;
 
+    letter-spacing: 2px;
+
+    text-shadow: 2px 2px 8px rgba(217, 140, 179, 0.5);
+
 }
 
+
+/* Custom styles for all <h2> elements */
 
 h2 {
 
     color: #B497D6;
+
+    letter-spacing: 1px;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 2px;
 
 }
 
