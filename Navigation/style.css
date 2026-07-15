@@ -12,6 +12,7 @@ body {
 }
 
 
+
 main {
 
     padding: 40px;
@@ -19,6 +20,7 @@ main {
     text-align: center;
 
 }
+
 
 
 /* ==========================
@@ -38,6 +40,7 @@ h1 {
 }
 
 
+
 /* ==========================
 Custom styles for all <h2> elements
 ========================== */
@@ -55,6 +58,7 @@ h2 {
 }
 
 
+
 p {
 
     font-size: 18px;
@@ -62,6 +66,7 @@ p {
     line-height: 1.6;
 
 }
+
 
 
 /* ==========================
@@ -83,6 +88,7 @@ About Page Grid Layout
 }
 
 
+
 .about-text {
 
     text-align: left;
@@ -90,11 +96,14 @@ About Page Grid Layout
 }
 
 
+
 .about-media {
 
     text-align: center;
 
 }
+
+
 
 
 
@@ -115,15 +124,8 @@ Projects Page Grid Layout
 }
 
 
+
 .project-card {
-
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 20px;
-
-    align-items: center;
 
     background-color: white;
 
@@ -133,18 +135,20 @@ Projects Page Grid Layout
 
     padding: 25px;
 
-}
-
-
-.project-card article {
-
-    display: flex;
-
-    flex-direction: column;
-
-    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+
+
+
+.project-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(217,140,179,0.3);
+
+}
+
 
 
 .project-card figure {
@@ -152,6 +156,7 @@ Projects Page Grid Layout
     margin: 0;
 
 }
+
 
 
 .project-card img {
@@ -169,6 +174,7 @@ Projects Page Grid Layout
 }
 
 
+
 .project-card figcaption {
 
     margin-top: 10px;
@@ -178,6 +184,7 @@ Projects Page Grid Layout
 }
 
 
+
 .project-info {
 
     text-align: center;
@@ -185,11 +192,6 @@ Projects Page Grid Layout
 }
 
 
-.project-info h2 {
-
-    margin-top: 0;
-
-}
 
 
 
@@ -203,8 +205,6 @@ Image and Video Styling
 
     max-width: 100%;
 
-    height: auto;
-
     border-radius: 15px;
 
     border: 3px solid #D98CB3;
@@ -216,19 +216,17 @@ Image and Video Styling
 }
 
 
+
 .resume-video {
 
     width: 100%;
 
     max-width: 450px;
 
-    height: auto;
-
     border-radius: 15px;
 
-    margin: 20px auto;
-
 }
+
 
 
 img {
@@ -240,6 +238,7 @@ img {
 }
 
 
+
 figcaption {
 
     font-style: italic;
@@ -247,6 +246,128 @@ figcaption {
     color: #5C4A5A;
 
 }
+
+
+
+
+
+/* ==========================
+Reflection Page Styling
+========================== */
+
+.reflection-page {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+
+
+.reflection-card {
+
+    background-color: white;
+
+    max-width: 800px;
+
+    width: 100%;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    border: 2px solid #D98CB3;
+
+    box-shadow: 0 5px 15px rgba(217,140,179,0.2);
+
+}
+
+
+
+.reflection-card p {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/* ==========================
+Skills Page Styling
+========================== */
+
+.skills-page {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+
+
+.skills-page .reflection-card {
+
+    max-width: 800px;
+
+}
+
+
+
+.skills-page ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+.skills-page li {
+
+    background-color: white;
+
+    border: 2px solid #D98CB3;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+.skills-page li:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(217,140,179,0.3);
+
+}
+
+
 
 
 
@@ -271,6 +392,7 @@ form {
 }
 
 
+
 label {
 
     display: block;
@@ -281,9 +403,8 @@ label {
 
     font-weight: bold;
 
-    color: #5C4A5A;
-
 }
+
 
 
 input,
@@ -300,11 +421,10 @@ textarea {
 
     border-radius: 8px;
 
-    font-size: 16px;
-
     box-sizing: border-box;
 
 }
+
 
 
 textarea {
@@ -314,30 +434,32 @@ textarea {
 }
 
 
+
 button {
 
-    margin-top: 20px;
+    margin-top:20px;
 
-    padding: 12px 25px;
+    padding:12px 25px;
 
-    background-color: #D98CB3;
+    background-color:#D98CB3;
 
-    color: white;
+    color:white;
 
-    border: none;
+    border:none;
 
-    border-radius: 8px;
-
-    cursor: pointer;
+    border-radius:8px;
 
 }
+
 
 
 button:hover {
 
-    background-color: #B497D6;
+    background-color:#B497D6;
 
 }
+
+
 
 
 
@@ -347,101 +469,49 @@ Footer Styling
 
 footer {
 
-    background-image: url("images/footer-background.jpg");
+    background-image:url("images/footer-background.jpg");
 
-    background-size: cover;
+    background-size:cover;
 
-    background-position: center;
+    background-position:center;
 
-    text-align: center;
+    text-align:center;
 
-    padding: 30px;
+    padding:30px;
 
-    color: white;
-
-}
-
-
-.contact-info p {
-
-    margin: 12px;
-
-    font-size: 18px;
+    color:white;
 
 }
 
 
-
-/* Footer Icon Hover Animation */
 
 .footer-icon {
 
-    display: inline-block;
+    display:inline-block;
 
-    font-size: 22px;
+    font-size:22px;
 
-    vertical-align: middle;
+    margin-right:8px;
 
-    margin-right: 8px;
-
-    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    transition:transform .3s ease, color .3s ease, text-shadow .3s ease;
 
 }
+
 
 
 .footer-icon:hover {
 
-    transform: scale(1.4) translateY(-3px);
+    transform:scale(1.4) translateY(-3px);
 
-    color: #D98CB3;
+    color:#D98CB3;
 
-    text-shadow: 0 0 12px #D98CB3;
+    text-shadow:0 0 12px #D98CB3;
 
-    cursor: pointer;
-
-}
-
-
-
-/* ==========================
-Reflection Page Styling
-========================== */
-
-.reflection-page {
-
-    display: flex;
-
-    justify-content: center;
-
-    padding: 40px;
+    cursor:pointer;
 
 }
 
 
-.reflection-card {
-
-    background-color: white;
-
-    max-width: 800px;
-
-    padding: 40px;
-
-    border-radius: 15px;
-
-    border: 2px solid #D98CB3;
-
-    box-shadow: 0 5px 15px rgba(217, 140, 179, 0.2);
-
-}
-
-
-.reflection-card p {
-
-    text-align: left;
-
-    margin-bottom: 20px;
-
-}
 
 
 
@@ -454,87 +524,48 @@ Responsive Layout
 
     main {
 
-        padding: 20px;
+        padding:20px;
 
     }
 
 
     .about-grid {
 
-        grid-template-columns: 1fr;
-
-        padding: 20px;
-
-    }
-
-
-    .about-text {
-
-        text-align: center;
-
-    }
-
-
-    .profile-image {
-
-        width: 180px;
-
-    }
-
-
-    .resume-video {
-
-        width: 100%;
+        grid-template-columns:1fr;
 
     }
 
 
     .projects-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
 
     }
 
 
-    .project-card {
+    .skills-page ul {
 
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
-    }
-
-
-    .project-info {
-
-        text-align: center;
-
-    }
-
-
-    .project-card img {
-
-        margin: auto;
-
-        max-width: 220px;
+        grid-template-columns:1fr;
 
     }
 
 
     h1 {
 
-        font-size: 30px;
+        font-size:30px;
 
     }
 
 
     p {
 
-        font-size: 16px;
+        font-size:16px;
 
     }
 
 }
+
+
 
 
 
@@ -547,18 +578,18 @@ Print Styling
 
     @page {
 
-        margin: 1in;
+        margin:1in;
 
     }
 
 
     body {
 
-        font-family: Georgia, "Times New Roman", serif;
+        font-family:Georgia,"Times New Roman",serif;
 
-        color: black;
+        background:white;
 
-        background: white;
+        color:black;
 
     }
 
@@ -569,7 +600,7 @@ Print Styling
     video,
     figure {
 
-        display: none;
+        display:none;
 
     }
 
@@ -579,55 +610,16 @@ Print Styling
     p,
     li {
 
-        color: black;
-
-    }
-
-
-    h1 {
-
-        font-size: 24pt;
-
-    }
-
-
-    h2 {
-
-        font-size: 16pt;
-
-    }
-
-
-    p,
-    li {
-
-        font-size: 12pt;
-
-        line-height: 1.4;
+        color:black;
 
     }
 
 
     footer {
 
-        background-image: none;
+        background:none;
 
-        background-color: white;
-
-        color: black;
-
-        text-align: left;
-
-        padding: 0;
-
-    }
-
-
-    footer p {
-
-        color: black;
-
-        font-size: 12pt;
+        color:black;
 
     }
 
