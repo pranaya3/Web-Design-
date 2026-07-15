@@ -372,6 +372,112 @@ Skills Page Styling
 
 
 /* ==========================
+Table Styling
+========================== */
+
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin: 30px auto;
+
+}
+
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border: 2px solid #D98CB3;
+
+}
+
+
+
+caption {
+
+    caption-side: top;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #D98CB3;
+
+    padding: 15px;
+
+}
+
+
+
+th {
+
+    background-color: #B497D6;
+
+    color: white;
+
+    padding: 15px;
+
+    border: 1px solid #D98CB3;
+
+}
+
+
+
+td {
+
+    padding: 15px;
+
+    border: 1px solid #D98CB3;
+
+    text-align: center;
+
+}
+
+
+
+/* First and third rows same color */
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+
+    background-color: #FFF0F7;
+
+}
+
+
+
+/* Alternating row colors */
+
+tbody tr:nth-child(even) {
+
+    background-color: #F8F0FF;
+
+}
+
+
+
+/* Hover effect */
+
+tbody tr:hover {
+
+    background-color: #FFE4F0;
+
+}
+
+
+
+
+
+/* ==========================
 Contact Form Styling
 ========================== */
 
@@ -550,6 +656,28 @@ Responsive Layout
     }
 
 
+    table {
+
+        font-size:14px;
+
+    }
+
+
+    th,
+    td {
+
+        padding:10px;
+
+    }
+
+
+    .table-container {
+
+        overflow-x:auto;
+
+    }
+
+
     h1 {
 
         font-size:30px;
@@ -608,7 +736,9 @@ Print Styling
     h1,
     h2,
     p,
-    li {
+    li,
+    td,
+    th {
 
         color:black;
 
