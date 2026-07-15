@@ -1,7 +1,4 @@
-<!--
-Name: Pranaya Bollu
-File: BolluTemplate.html
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,45 +12,31 @@ File: BolluTemplate.html
 
     <title>Pranaya Resume Template</title>
 
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
-
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="nav.css">
-
     <link rel="stylesheet" href="style.css">
-
 
 </head>
 
-
-
 <body>
 
-
-
-<!-- Navigation Header -->
+<!-- ==========================
+Header & Navigation
+========================== -->
 
 <header>
 
-
     <img src="logo.png" alt="Pranaya Resume Logo">
 
-
     <!-- Mobile Hamburger Icon -->
-
     <div class="hamburger" onclick="toggleMenu()">
-
         ☰
-
     </div>
 
-
-
     <nav id="mobile-nav">
-
 
         <ul>
 
@@ -61,7 +44,23 @@ File: BolluTemplate.html
 
             <li><a href="about.html">About</a></li>
 
-            <li><a href="projects.html">Projects</a></li>
+            <li>
+
+                <a href="projects.html">Projects</a>
+
+                <ul>
+
+                    <li><a href="projects.html#resume">Resume Website</a></li>
+
+                    <li><a href="projects.html#webdesign">Web Design</a></li>
+
+                    <li><a href="projects.html#technology">Technology</a></li>
+
+                    <li><a href="projects.html#learning">Continuous Learning</a></li>
+
+                </ul>
+
+            </li>
 
             <li><a href="skills.html">Skills</a></li>
 
@@ -69,104 +68,67 @@ File: BolluTemplate.html
 
         </ul>
 
-
     </nav>
-
 
 </header>
 
-
-
-
+<!-- ==========================
+Main Content
+========================== -->
 
 <main>
 
-
     <h1>Pranaya Bollu</h1>
-
 
     <h2>Information Technology Portfolio</h2>
 
-
-
     <p>
-
-        Welcome to my resume website. This portfolio highlights my skills,
-        projects, education, and experience in technology.
-
+        Welcome to my resume website. This portfolio highlights my
+        skills, projects, education, and experience in Information
+        Technology.
     </p>
 
-
-
     <p>
-
         I am passionate about web design, technology, and creating
-        user-friendly digital experiences.
-
+        user-friendly digital experiences through responsive websites
+        and modern development tools.
     </p>
-
-
 
 </main>
 
-
-
-
-
-<!-- Footer Contact Information -->
-
+<!-- ==========================
+Footer
+========================== -->
 
 <footer>
 
-
-
     <div class="contact-info">
 
-
-
         <p>
-
             <img src="images/phone.png"
                  alt="Phone icon"
                  class="footer-icon">
 
             (555) 123-4567
-
         </p>
 
-
-
-
         <p>
-
             <img src="images/email.png"
                  alt="Email icon"
                  class="footer-icon">
 
             pranaya@example.com
-
         </p>
-
-
 
     </div>
 
-
-
-
-    <p>
-
-        © 2026 Pranaya Bollu
-
-    </p>
-
-
+    <p>&copy; 2026 Pranaya Bollu</p>
 
 </footer>
 
-
-
-<!-- Hamburger Menu Script -->
+<!-- ==========================
+Hamburger Menu Script
+========================== -->
 
 <script>
 
@@ -174,14 +136,11 @@ function toggleMenu() {
 
     var menu = document.getElementById("mobile-nav");
 
-
     if (menu.style.display === "block") {
 
         menu.style.display = "none";
 
-    } 
-    
-    else {
+    } else {
 
         menu.style.display = "block";
 
@@ -190,9 +149,6 @@ function toggleMenu() {
 }
 
 </script>
-
-
-
 
 </body>
 
