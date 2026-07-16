@@ -116,33 +116,26 @@ p {
 
 .quote-section {
 
-    max-width: 700px;
+    max-width:700px;
 
-    margin: 50px auto;
+    margin:50px auto;
 
-    text-align: center;
+    text-align:center;
 
 }
 
 
 .quote-section blockquote {
 
-    font-size: 26px;
+    font-size:26px;
 
-    color: #D98CB3;
+    color:#D98CB3;
 
-    font-style: italic;
-
-    margin-bottom: 10px;
+    font-style:italic;
 
 }
 
 
-.quote-section p {
-
-    font-weight: bold;
-
-}
 
 
 
@@ -150,31 +143,96 @@ p {
    About Page
 ========================== */
 
+
 .about-grid {
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
 
-    gap: 40px;
+    gap:40px;
 
-    padding: 40px;
+    padding:40px;
 
 }
+
 
 
 .about-text {
 
-    text-align: left;
+    text-align:left;
 
 }
+
+
+
+.about-text p {
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-text ul {
+
+    text-align:left;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+.about-text a {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:12px 25px;
+
+    background-color:#D98CB3;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+
+
+.about-text a:hover {
+
+    background-color:#B497D6;
+
+    transform:translateY(-3px);
+
+}
+
 
 
 .about-media {
 
-    text-align: center;
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
 }
+
+
 
 
 
@@ -182,41 +240,45 @@ p {
    Projects Page
 ========================== */
 
+
 .projects-grid {
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
 
-    gap: 35px;
+    gap:35px;
 
-    margin-top: 30px;
+    margin-top:30px;
 
 }
+
 
 
 .project-card {
 
-    background-color: white;
+    background-color:white;
 
-    border: 2px solid #D98CB3;
+    border:2px solid #D98CB3;
 
-    border-radius: 15px;
+    border-radius:15px;
 
-    padding: 25px;
+    padding:25px;
 
-    transition: .3s;
+    transition:.3s;
 
 }
+
 
 
 .project-card:hover {
 
-    transform: translateY(-5px);
+    transform:translateY(-5px);
 
-    box-shadow: 0 5px 15px rgba(217,140,179,.3);
+    box-shadow:0 5px 15px rgba(217,140,179,.3);
 
 }
+
 
 
 .project-card img {
@@ -232,6 +294,7 @@ p {
 }
 
 
+
 .project-info {
 
     text-align:center;
@@ -240,9 +303,12 @@ p {
 
 
 
+
+
 /* ==========================
    Images & Video
 ========================== */
+
 
 .profile-image {
 
@@ -257,6 +323,7 @@ p {
 }
 
 
+
 .resume-video {
 
     width:100%;
@@ -265,13 +332,28 @@ p {
 
     border-radius:15px;
 
+    border:3px solid #D98CB3;
+
 }
+
+
+
+.about-media figcaption {
+
+    margin-top:10px;
+
+    font-style:italic;
+
+}
+
+
 
 
 
 /* ==========================
    Reflection Page
 ========================== */
+
 
 .reflection-page {
 
@@ -282,6 +364,7 @@ p {
     padding:40px;
 
 }
+
 
 
 .reflection-card {
@@ -303,6 +386,7 @@ p {
 }
 
 
+
 .reflection-card p {
 
     text-align:left;
@@ -311,9 +395,12 @@ p {
 
 
 
+
+
 /* ==========================
    Skills Table Styling
 ========================== */
+
 
 .skills-page {
 
@@ -322,6 +409,7 @@ p {
     justify-content:center;
 
 }
+
 
 
 .skills-table {
@@ -339,6 +427,7 @@ p {
 }
 
 
+
 .skills-table caption {
 
     caption-side:top;
@@ -354,6 +443,7 @@ p {
 }
 
 
+
 .skills-table th {
 
     background-color:#B497D6;
@@ -367,6 +457,7 @@ p {
 }
 
 
+
 .skills-table td {
 
     padding:15px;
@@ -376,7 +467,6 @@ p {
 }
 
 
-/* First and Third Rows */
 
 .skills-table tbody tr:nth-child(1),
 
@@ -387,13 +477,13 @@ p {
 }
 
 
-/* Alternate Rows */
 
 .skills-table tbody tr:nth-child(even) {
 
     background-color:#F8F0FF;
 
 }
+
 
 
 .skills-table tbody tr:nth-child(odd) {
@@ -404,9 +494,12 @@ p {
 
 
 
+
+
 /* ==========================
    Contact Form
 ========================== */
+
 
 form {
 
@@ -425,6 +518,7 @@ form {
 }
 
 
+
 label {
 
     display:block;
@@ -436,6 +530,7 @@ label {
     font-weight:bold;
 
 }
+
 
 
 input,
@@ -457,11 +552,13 @@ textarea {
 }
 
 
+
 textarea {
 
     height:150px;
 
 }
+
 
 
 button {
@@ -483,6 +580,7 @@ button {
 }
 
 
+
 button:hover {
 
     background:#B497D6;
@@ -491,9 +589,12 @@ button:hover {
 
 
 
+
+
 /* ==========================
    Footer
 ========================== */
+
 
 footer {
 
@@ -512,6 +613,7 @@ footer {
 }
 
 
+
 .footer-icon {
 
     display:inline-block;
@@ -525,6 +627,7 @@ footer {
 }
 
 
+
 .footer-icon:hover {
 
     transform:scale(1.4);
@@ -535,11 +638,15 @@ footer {
 
 
 
+
+
 /* ==========================
    Responsive Design
 ========================== */
 
+
 @media screen and (max-width:768px) {
+
 
     main {
 
@@ -547,11 +654,17 @@ footer {
 
     }
 
+
+
     .about-grid {
 
         grid-template-columns:1fr;
 
+        padding:20px;
+
     }
+
+
 
     .projects-grid {
 
@@ -559,29 +672,31 @@ footer {
 
     }
 
+
+
+    .about-text {
+
+        text-align:center;
+
+    }
+
+
+
+    .about-text ul {
+
+        text-align:left;
+
+    }
+
+
+
     .hero-image {
 
         max-width:100%;
 
     }
 
-    .home-content {
 
-        text-align:center;
-
-    }
-
-    h1 {
-
-        font-size:30px;
-
-    }
-
-    p {
-
-        font-size:16px;
-
-    }
 
     .skills-table {
 
@@ -593,7 +708,26 @@ footer {
 
     }
 
+
+
+    h1 {
+
+        font-size:30px;
+
+    }
+
+
+
+    p {
+
+        font-size:16px;
+
+    }
+
+
 }
+
+
 
 
 
@@ -601,7 +735,9 @@ footer {
    Print Styling
 ========================== */
 
+
 @media print {
+
 
 body {
 
@@ -613,6 +749,8 @@ body {
 
 }
 
+
+
 header,
 nav,
 img,
@@ -621,6 +759,8 @@ video {
     display:none;
 
 }
+
+
 
 h1,
 h2,
@@ -631,6 +771,8 @@ li {
 
 }
 
+
+
 footer {
 
     background:none;
@@ -638,5 +780,6 @@ footer {
     color:black;
 
 }
+
 
 }
