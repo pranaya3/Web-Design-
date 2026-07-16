@@ -50,6 +50,13 @@ h2 {
 }
 
 
+h3 {
+
+    color: #D98CB3;
+
+}
+
+
 p {
 
     font-size: 18px;
@@ -60,56 +67,57 @@ p {
 
 
 
+
+
 /* ==========================
    Home Page Hero Section
 ========================== */
 
+
 .hero-section {
 
-    text-align: center;
+    text-align:center;
 
-    padding: 40px;
+    padding:40px;
 
 }
 
 
 .hero-image {
 
-    width: 100%;
+    width:100%;
 
-    max-width: 850px;
+    max-width:850px;
 
-    height: auto;
+    border-radius:15px;
 
-    border-radius: 15px;
+    border:3px solid #D98CB3;
 
-    border: 3px solid #D98CB3;
+    margin-bottom:30px;
 
-    margin-bottom: 30px;
-
-    box-shadow: 0 5px 15px rgba(217,140,179,.3);
+    box-shadow:0 5px 15px rgba(217,140,179,.3);
 
 }
 
 
 .welcome-text {
 
-    max-width: 850px;
+    max-width:850px;
 
-    margin: auto;
+    margin:auto;
 
-    font-size: 20px;
+    font-size:20px;
 
 }
 
 
 .home-content {
 
-    max-width: 900px;
+    max-width:900px;
 
-    margin: 50px auto;
+    margin:50px auto;
 
-    text-align: left;
+    text-align:left;
 
 }
 
@@ -119,8 +127,6 @@ p {
     max-width:700px;
 
     margin:50px auto;
-
-    text-align:center;
 
 }
 
@@ -157,7 +163,6 @@ p {
 }
 
 
-
 .about-text {
 
     text-align:left;
@@ -165,70 +170,9 @@ p {
 }
 
 
-
-.about-text p {
-
-    line-height:1.8;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.about-text ul {
-
-    text-align:left;
-
-    line-height:1.8;
-
-    font-size:18px;
-
-}
-
-
-
-.about-text a {
-
-    display:inline-block;
-
-    margin-top:15px;
-
-    padding:12px 25px;
-
-    background-color:#D98CB3;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:8px;
-
-    transition:.3s;
-
-}
-
-
-
-.about-text a:hover {
-
-    background-color:#B497D6;
-
-    transform:translateY(-3px);
-
-}
-
-
-
 .about-media {
 
     text-align:center;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
 
 }
 
@@ -237,11 +181,11 @@ p {
 
 
 /* ==========================
-   Projects Page
+   Career Page
 ========================== */
 
 
-.projects-grid {
+.career-grid {
 
     display:grid;
 
@@ -249,21 +193,23 @@ p {
 
     gap:35px;
 
-    margin-top:30px;
+    margin-top:40px;
 
 }
 
 
 
-.project-card {
+.career-card {
 
-    background-color:white;
+    background:white;
 
     border:2px solid #D98CB3;
 
     border-radius:15px;
 
-    padding:25px;
+    padding:30px;
+
+    text-align:left;
 
     transition:.3s;
 
@@ -271,7 +217,7 @@ p {
 
 
 
-.project-card:hover {
+.career-card:hover {
 
     transform:translateY(-5px);
 
@@ -281,23 +227,41 @@ p {
 
 
 
-.project-card img {
+.career-card h2 {
 
-    width:100%;
-
-    max-width:300px;
-
-    border-radius:12px;
-
-    border:3px solid #D98CB3;
+    text-align:center;
 
 }
 
 
 
-.project-info {
+.career-card h3 {
 
     text-align:center;
+
+}
+
+
+
+.career-card p {
+
+    font-size:16px;
+
+}
+
+
+
+.career-image {
+
+    display:block;
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    margin:0 auto 20px;
 
 }
 
@@ -314,6 +278,8 @@ p {
 
     width:200px;
 
+    max-width:100%;
+
     border-radius:15px;
 
     border:3px solid #D98CB3;
@@ -321,7 +287,6 @@ p {
     padding:5px;
 
 }
-
 
 
 .resume-video {
@@ -332,15 +297,19 @@ p {
 
     border-radius:15px;
 
-    border:3px solid #D98CB3;
+}
+
+
+img {
+
+    max-width:100%;
+
+    height:auto;
 
 }
 
 
-
-.about-media figcaption {
-
-    margin-top:10px;
+figcaption {
 
     font-style:italic;
 
@@ -398,7 +367,7 @@ p {
 
 
 /* ==========================
-   Skills Table Styling
+   Skills Table
 ========================== */
 
 
@@ -411,7 +380,6 @@ p {
 }
 
 
-
 .skills-table {
 
     width:100%;
@@ -421,8 +389,6 @@ p {
     margin-top:30px;
 
     background:white;
-
-    border:2px solid #D98CB3;
 
 }
 
@@ -446,7 +412,7 @@ p {
 
 .skills-table th {
 
-    background-color:#B497D6;
+    background:#B497D6;
 
     color:white;
 
@@ -468,19 +434,23 @@ p {
 
 
 
+/* First and Third Rows Same Color */
+
 .skills-table tbody tr:nth-child(1),
 
 .skills-table tbody tr:nth-child(3) {
 
-    background-color:#FCE4EC;
+    background:#FCE4EC;
 
 }
 
 
 
+/* Alternating Colors */
+
 .skills-table tbody tr:nth-child(even) {
 
-    background-color:#F8F0FF;
+    background:#F8F0FF;
 
 }
 
@@ -488,7 +458,7 @@ p {
 
 .skills-table tbody tr:nth-child(odd) {
 
-    background-color:#FFF8F5;
+    background:#FFF8F5;
 
 }
 
@@ -575,8 +545,6 @@ button {
 
     border-radius:8px;
 
-    cursor:pointer;
-
 }
 
 
@@ -622,8 +590,6 @@ footer {
 
     margin-right:8px;
 
-    transition:.3s;
-
 }
 
 
@@ -660,51 +626,13 @@ footer {
 
         grid-template-columns:1fr;
 
-        padding:20px;
-
     }
 
 
 
-    .projects-grid {
+    .career-grid {
 
         grid-template-columns:1fr;
-
-    }
-
-
-
-    .about-text {
-
-        text-align:center;
-
-    }
-
-
-
-    .about-text ul {
-
-        text-align:left;
-
-    }
-
-
-
-    .hero-image {
-
-        max-width:100%;
-
-    }
-
-
-
-    .skills-table {
-
-        display:block;
-
-        overflow-x:auto;
-
-        white-space:nowrap;
 
     }
 
@@ -721,6 +649,18 @@ footer {
     p {
 
         font-size:16px;
+
+    }
+
+
+
+    .skills-table {
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
 
     }
 
@@ -764,6 +704,7 @@ video {
 
 h1,
 h2,
+h3,
 p,
 li {
 
