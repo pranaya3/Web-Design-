@@ -30,9 +30,11 @@ header img {
 }
 
 
+
 /* ==========================
 Navigation Menu
 ========================== */
+
 
 nav {
 
@@ -84,7 +86,8 @@ nav li a {
 }
 
 
-/* Hover */
+
+/* Hover Effect */
 
 nav li a:hover {
 
@@ -148,6 +151,8 @@ nav ul li ul li a {
 
 
 
+
+
 /* ==========================
 Hamburger Button
 ========================== */
@@ -170,6 +175,13 @@ Hamburger Button
 }
 
 
+.menu-toggle:focus {
+
+    outline:2px solid #D98CB3;
+
+}
+
+
 
 
 
@@ -182,6 +194,8 @@ Mobile Navigation
 
 
 header {
+
+    flex-wrap:wrap;
 
     padding:15px 20px;
 
@@ -209,7 +223,7 @@ header img {
 
 
 
-/* Hide navigation */
+/* Navigation full width */
 
 nav {
 
@@ -218,6 +232,8 @@ nav {
 }
 
 
+
+/* Hide menu initially */
 
 nav ul {
 
@@ -239,9 +255,9 @@ nav ul {
 
 
 
-/* When button clicked */
+/* Show menu when clicked */
 
-nav ul.active {
+nav.active ul {
 
     display:flex;
 
@@ -279,6 +295,8 @@ nav ul li ul {
 
     box-shadow:none;
 
+    margin-left:20px;
+
 }
 
 
@@ -296,6 +314,7 @@ nav ul li ul li a {
     font-size:16px;
 
 }
+
 
 
 }
