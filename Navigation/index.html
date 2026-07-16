@@ -1,28 +1,40 @@
+<!--
+Name: Pranaya Bollu
+File: index.html
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>Home | Pranaya Bollu</title>
 
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="nav.css">
+
     <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 
 <body>
+
 
 
 <header>
@@ -31,16 +43,19 @@
     <img src="logo.png" alt="Pranaya Resume Logo">
 
 
-    <!-- Mobile Hamburger Button -->
-    <button class="menu-toggle" aria-label="Open Menu">
+    <button class="menu-toggle" aria-label="Open navigation menu">
+
         ☰
+
     </button>
 
 
 
-    <nav id="main-nav">
+    <nav>
+
 
         <ul>
+
 
             <li>
                 <a href="index.html">Home</a>
@@ -84,88 +99,99 @@
 
 
 
+
 <main>
 
 
-    <section class="hero-section">
-
-
-        <img src="images/hero.jpg"
-             alt="Pranaya Bollu working on web development projects"
-             class="hero-image">
+<section class="hero-section">
 
 
 
-        <h1>
-            Welcome to My Portfolio!
-        </h1>
-
-
-
-        <p class="welcome-text">
-
-            Hello! I'm Pranaya Bollu, an Information Technology student
-            with a passion for web development, programming, and creating
-            engaging digital experiences.
-
-        </p>
-
-
-    </section>
+<img src="images/hero.jpg"
+     alt="Pranaya Bollu working on web development projects"
+     class="hero-image">
 
 
 
 
 
-    <section class="home-content">
-
-
-        <h2>
-            My Purpose & Goals
-        </h2>
-
-
-
-        <p>
-
-            My goal is to build a strong foundation in Information Technology
-            while developing practical skills in web development, programming,
-            cybersecurity, and software design. Throughout my coursework and
-            personal projects, I enjoy solving problems, learning new
-            technologies, and creating responsive websites that are both
-            functional and visually appealing. This portfolio showcases the
-            projects, technical skills, and experiences I have gained during
-            my academic journey. As I continue learning, I hope to expand my
-            knowledge, earn professional certifications, and pursue a career
-            where I can contribute creative ideas, collaborate with others,
-            and make a positive impact through technology.
-
-        </p>
-
-
-    </section>
+<h1>
+Welcome to My Portfolio!
+</h1>
 
 
 
 
 
-    <section class="quote-section">
+<p class="welcome-text">
+
+Hello! I'm Pranaya Bollu, an Information Technology student
+with a passion for web development, programming, and creating
+engaging digital experiences.
+
+</p>
 
 
-        <blockquote>
 
-            "The beautiful thing about learning is that no one can take it away from you."
-
-        </blockquote>
+</section>
 
 
 
-        <p>
-            — B.B. King
-        </p>
 
 
-    </section>
+
+<section class="home-content">
+
+
+<h2>
+My Purpose & Goals
+</h2>
+
+
+
+
+<p>
+
+My goal is to build a strong foundation in Information Technology
+while developing practical skills in web development, programming,
+cybersecurity, and software design. Throughout my coursework and
+personal projects, I enjoy solving problems, learning new
+technologies, and creating responsive websites that are both
+functional and visually appealing. This portfolio showcases the
+projects, technical skills, and experiences I have gained during
+my academic journey. As I continue learning, I hope to expand my
+knowledge, earn professional certifications, and pursue a career
+where I can contribute creative ideas, collaborate with others,
+and make a positive impact through technology.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="quote-section">
+
+
+<blockquote>
+
+"The beautiful thing about learning is that no one can take it away from you."
+
+</blockquote>
+
+
+
+<p>
+— B.B. King
+</p>
+
+
+</section>
 
 
 
@@ -175,26 +201,38 @@
 
 
 
+
 <footer>
 
 
-    <p>
-        <span class="footer-icon">✉️</span>
-        Email: psbn8m@umsystem.edu
-    </p>
+
+<p>
+
+<span class="footer-icon">✉️</span>
+
+Email: psbn8m@umsystem.edu
+
+</p>
 
 
 
-    <p>
-        <span class="footer-icon">📞</span>
-        Phone: (636) 274 9586
-    </p>
+
+<p>
+
+<span class="footer-icon">📞</span>
+
+Phone: (636) 274 9586
+
+</p>
 
 
 
-    <p>
-        &copy; 2026 Pranaya Bollu
-    </p>
+
+<p>
+
+&copy; 2026 Pranaya Bollu
+
+</p>
 
 
 
@@ -204,20 +242,27 @@
 
 
 
+
 <script>
+
 
 const menuButton = document.querySelector(".menu-toggle");
 
-const nav = document.querySelector("#main-nav");
+const navMenu = document.querySelector("nav ul");
 
 
-menuButton.addEventListener("click", function(){
 
-    nav.classList.toggle("active");
+menuButton.addEventListener("click", () => {
+
+
+    navMenu.classList.toggle("active");
+
 
 });
 
+
 </script>
+
 
 
 
