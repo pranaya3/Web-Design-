@@ -33,9 +33,7 @@ File: contact.html
 </head>
 
 
-
 <body>
-
 
 
 <header>
@@ -45,12 +43,13 @@ File: contact.html
 
 
 
+    <!-- Mobile Hamburger -->
+
     <button class="menu-toggle" aria-label="Open navigation menu">
 
         ☰
 
     </button>
-
 
 
 
@@ -103,8 +102,6 @@ File: contact.html
 
 
 
-
-
 <main>
 
 
@@ -114,16 +111,11 @@ File: contact.html
 <h1>Contact Me</h1>
 
 
-
 <p>
-
 If you have questions, would like to discuss my projects,
 or want to learn more about my experience, please complete
 the form below.
-
 </p>
-
-
 
 
 
@@ -132,20 +124,17 @@ the form below.
 <form>
 
 
-
 <label for="first-name">
 First Name:
 </label>
 
 
-<input
+<input 
 type="text"
 id="first-name"
 name="first-name"
 placeholder="Enter your first name"
 required>
-
-
 
 
 
@@ -161,8 +150,6 @@ id="last-name"
 name="last-name"
 placeholder="Enter your last name"
 required>
-
-
 
 
 
@@ -183,18 +170,15 @@ required>
 
 
 
-
-
 <label>
 Reason for Contact:
 </label>
 
 
-
 <div class="radio-options">
 
 
-<input
+<input 
 type="radio"
 id="question"
 name="contact-reason"
@@ -232,10 +216,7 @@ Career Opportunity
 </label>
 
 
-
 </div>
-
-
 
 
 
@@ -245,7 +226,6 @@ Career Opportunity
 <label>
 Topics You Are Interested In:
 </label>
-
 
 
 <div class="checkbox-options">
@@ -321,10 +301,7 @@ Submit
 
 
 
-
-
 </form>
-
 
 
 </section>
@@ -368,9 +345,7 @@ Phone: (636) 274-9586
 </p>
 
 
-
 </footer>
-
 
 
 
@@ -383,7 +358,7 @@ Phone: (636) 274-9586
 
 const menuButton = document.querySelector(".menu-toggle");
 
-const navMenu = document.querySelector("nav ul");
+const navMenu = document.querySelector("nav");
 
 
 
@@ -397,8 +372,6 @@ menuButton.addEventListener("click", () => {
 
 
 </script>
-
-
 
 
 
