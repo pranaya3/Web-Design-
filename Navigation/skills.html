@@ -14,7 +14,7 @@ File: skills.html
     <title>Skills | Pranaya Bollu</title>
 
 
-    <!-- Custom font used here -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -32,44 +32,64 @@ File: skills.html
 
 <header>
 
+
     <img src="logo.png" alt="Pranaya Resume Logo">
 
 
-    <nav>
+
+    <!-- Mobile Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">
+        ☰
+    </button>
+
+
+
+
+    <nav id="main-nav">
+
 
         <ul>
+
 
             <li>
                 <a href="index.html">Home</a>
             </li>
 
+
             <li>
                 <a href="about.html">About</a>
             </li>
+
 
             <li>
                 <a href="project.html">Career</a>
             </li>
 
+
             <li>
                 <a href="reflection.html">Reflection</a>
             </li>
 
-    
+
             <li>
                 <a href="skills.html">Skills</a>
             </li>
+
 
             <li>
                 <a href="contact.html">Contact</a>
             </li>
 
+
         </ul>
+
 
     </nav>
 
 
 </header>
+
+
 
 
 
@@ -84,10 +104,13 @@ File: skills.html
 <h1>Technical Skills</h1>
 
 
+
 <p>
 This table summarizes my technical skills, programming knowledge,
 and areas of professional development.
 </p>
+
+
 
 
 
@@ -191,7 +214,9 @@ Pranaya Bollu Technical Skills Overview
 <tr>
 
 <td colspan="3">
+
 Skills continue to grow through coursework, projects, and professional experiences.
+
 </td>
 
 </tr>
@@ -216,6 +241,10 @@ Skills continue to grow through coursework, projects, and professional experienc
 
 
 
+
+
+
+
 <footer>
 
 
@@ -225,10 +254,12 @@ Skills continue to grow through coursework, projects, and professional experienc
     </p>
 
 
+
     <p>
         <span class="footer-icon">📞</span>
-        Phone: (636) 274 9586
+        Phone: (636) 274-9586
     </p>
+
 
 
     <p>
@@ -236,7 +267,30 @@ Skills continue to grow through coursework, projects, and professional experienc
     </p>
 
 
+
 </footer>
+
+
+
+
+
+
+<script>
+
+const menuButton = document.querySelector(".menu-toggle");
+
+const nav = document.querySelector("#main-nav");
+
+
+menuButton.addEventListener("click", function(){
+
+    nav.classList.toggle("active");
+
+});
+
+</script>
+
+
 
 
 
