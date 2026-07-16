@@ -15,6 +15,7 @@ File: about.html
     <title>About | Pranaya Bollu</title>
 
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +23,7 @@ File: about.html
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
+    <!-- CSS -->
     <link rel="stylesheet" href="nav.css">
 
     <link rel="stylesheet" href="style.css">
@@ -38,21 +40,44 @@ File: about.html
     <img src="logo.png" alt="Pranaya Resume Logo">
 
 
+    <button class="menu-toggle" aria-label="Open navigation menu">
+        ☰
+    </button>
+
+
     <nav>
 
         <ul>
 
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-            <li><a href="about.html">About</a></li>
-            
-             <li><a href="project.html">Career</a></li>
 
-            <li><a href="reflection.html">Reflection</a></li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
 
-            <li><a href="skills.html">Skills</a></li>
 
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="project.html">Career</a>
+            </li>
+
+
+            <li>
+                <a href="reflection.html">Reflection</a>
+            </li>
+
+
+            <li>
+                <a href="skills.html">Skills</a>
+            </li>
+
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
 
         </ul>
 
@@ -64,8 +89,8 @@ File: about.html
 
 
 
-<main class="about-grid">
 
+<main class="about-grid">
 
 
 <section class="about-text">
@@ -74,24 +99,23 @@ File: about.html
 <h1>About Me</h1>
 
 
+
 <h2>Professional Overview</h2>
+
 
 
 <p>
 
 I am Pranaya Bollu, an Information Technology student passionate about web
-development, programming, and creating effective digital experiences. Through
-my coursework and projects, I have developed skills in HTML, CSS, responsive
-design, programming languages, databases, networking, and technical
-problem-solving. I enjoy exploring new technologies and applying creative
-solutions to real-world challenges. My goal is to continue expanding my
-technical knowledge while developing professional skills that allow me to
-contribute to innovative technology projects. I am interested in building
-user-friendly websites, improving my programming abilities, and gaining
-experience in the Information Technology field. This portfolio highlights my
-academic growth, technical skills, projects, and dedication to continuous
-learning.
-
+development, programming, and creating effective digital experiences.
+Through my coursework and projects, I have developed skills in HTML, CSS,
+responsive design, programming languages, databases, networking, and
+technical problem-solving. I enjoy exploring new technologies and applying
+creative solutions to real-world challenges. My goal is to continue
+expanding my technical knowledge while developing professional skills that
+allow me to contribute to innovative technology projects. I am interested
+in building user-friendly websites, improving my programming abilities,
+and gaining experience in the Information Technology field.
 
 </p>
 
@@ -101,19 +125,21 @@ learning.
 <h2>Education & Credentials</h2>
 
 
+
 <ul>
 
-<li>Bachelor's Degree in Information Technology</li>
+    <li>Bachelor's Degree in Information Technology</li>
 
-<li>Web Design and Development Coursework</li>
+    <li>Web Design and Development Coursework</li>
 
-<li>Programming and Software Development Coursework</li>
+    <li>Programming and Software Development Coursework</li>
 
-<li>Database Systems and Networking Coursework</li>
+    <li>Database Systems and Networking Coursework</li>
 
-<li>Cybersecurity Fundamentals</li>
+    <li>Cybersecurity Fundamentals</li>
 
 </ul>
+
 
 
 
@@ -121,16 +147,16 @@ learning.
 <h2>Resume</h2>
 
 
+
 <p>
-
-Download my professional resume:
-
+View my professional resume below:
 </p>
+
 
 
 <a href="media/Pranaya_Bollu_Resume.pdf" target="_blank">
 
-View PDF Resume
+Download Resume PDF
 
 </a>
 
@@ -143,11 +169,11 @@ View PDF Resume
 
 
 
-
 <section class="about-media">
 
 
 <h2>Professional Photo</h2>
+
 
 
 <img src="media/profile.jpg"
@@ -159,6 +185,7 @@ View PDF Resume
 
 
 <h2>Professional Introduction Video</h2>
+
 
 
 <figure>
@@ -179,10 +206,11 @@ Your browser does not support the video tag.
 
 <figcaption>
 
-A 30-60 second professional introduction video about my background,
+Professional introduction video highlighting my background,
 skills, and career goals.
 
 </figcaption>
+
 
 
 </figure>
@@ -200,11 +228,7 @@ skills, and career goals.
 
 
 
-
 <footer>
-
-
-<div class="contact-info">
 
 
 <p>
@@ -226,18 +250,35 @@ Phone: (636) 274 9586
 </p>
 
 
-</div>
-
-
 
 <p>
 
-&copy; 2026 Pranaya Bollu
+&copy; 2026 Pranaya Bollu. All Rights Reserved.
 
 </p>
 
 
+
 </footer>
+
+
+
+
+
+<script>
+
+const menuButton = document.querySelector(".menu-toggle");
+
+const navMenu = document.querySelector("nav ul");
+
+
+menuButton.addEventListener("click", () => {
+
+    navMenu.classList.toggle("active");
+
+});
+
+</script>
 
 
 
