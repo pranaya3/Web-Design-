@@ -45,7 +45,16 @@ File: reflection.html
 
 
 
-    <nav>
+    <!-- Mobile Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">
+        ☰
+    </button>
+
+
+
+
+
+    <nav id="main-nav">
 
 
         <ul>
@@ -60,13 +69,16 @@ File: reflection.html
                 <a href="about.html">About</a>
             </li>
 
+
             <li>
                 <a href="project.html">Career</a>
             </li>
 
+
             <li>
                 <a href="reflection.html">Reflection</a>
             </li>
+
 
             <li>
                 <a href="skills.html">Skills</a>
@@ -85,6 +97,8 @@ File: reflection.html
 
 
 </header>
+
+
 
 
 
@@ -159,6 +173,9 @@ File: reflection.html
 
 
 
+
+
+
 <footer>
 
 
@@ -183,6 +200,28 @@ File: reflection.html
 
 
 </footer>
+
+
+
+
+
+
+<script>
+
+const menuButton = document.querySelector(".menu-toggle");
+
+const nav = document.querySelector("#main-nav");
+
+
+menuButton.addEventListener("click", function(){
+
+    nav.classList.toggle("active");
+
+});
+
+</script>
+
+
 
 
 
