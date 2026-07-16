@@ -37,15 +37,19 @@ File: about.html
 
 <header>
 
+
     <img src="logo.png" alt="Pranaya Resume Logo">
 
 
+    <!-- Mobile Hamburger Button -->
     <button class="menu-toggle" aria-label="Open navigation menu">
         ☰
     </button>
 
 
-    <nav>
+
+    <nav id="main-nav">
+
 
         <ul>
 
@@ -80,6 +84,7 @@ File: about.html
 
 
         </ul>
+
 
     </nav>
 
@@ -265,16 +270,18 @@ Phone: (636) 274 9586
 
 
 
+<!-- Mobile Menu Script -->
+
 <script>
 
 const menuButton = document.querySelector(".menu-toggle");
 
-const navMenu = document.querySelector("nav ul");
+const nav = document.querySelector("#main-nav");
 
 
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener("click", function(){
 
-    navMenu.classList.toggle("active");
+    nav.classList.toggle("active");
 
 });
 
