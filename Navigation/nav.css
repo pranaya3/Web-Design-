@@ -16,6 +16,7 @@ header {
 
 }
 
+
 /* Logo */
 
 header img {
@@ -27,6 +28,7 @@ header img {
     object-fit: contain;
 
 }
+
 
 /* ==========================
 Navigation Menu
@@ -40,6 +42,7 @@ nav {
 
 }
 
+
 nav ul {
 
     display: flex;
@@ -52,11 +55,13 @@ nav ul {
 
 }
 
+
 nav ul li {
 
     position: relative;
 
 }
+
 
 nav li a {
 
@@ -78,176 +83,219 @@ nav li a {
 
 }
 
-/* Hover Effect */
+
+/* Hover */
 
 nav li a:hover {
 
-    background-color: #B497D6;
+    background-color:#B497D6;
 
-    color: white;
+    color:white;
 
 }
+
+
 
 /* ==========================
 Dropdown Menu
 ========================== */
 
+
 nav ul li ul {
 
-    display: none;
+    display:none;
 
-    position: absolute;
+    position:absolute;
 
-    top: 100%;
+    top:100%;
 
-    left: 0;
+    left:0;
 
-    background-color: #F7D6E6;
+    background:#F7D6E6;
 
-    min-width: 220px;
+    min-width:220px;
 
-    border-radius: 10px;
+    border-radius:10px;
 
-    padding: 0;
+    padding:0;
 
-    margin: 0;
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-
-    z-index: 1000;
+    z-index:1000;
 
 }
+
 
 nav ul li:hover > ul {
 
-    display: block;
+    display:block;
 
 }
+
 
 nav ul li ul li {
 
-    width: 100%;
+    width:100%;
 
 }
+
 
 nav ul li ul li a {
 
-    padding: 12px 16px;
-
-    border-radius: 0;
+    padding:12px 16px;
 
 }
 
+
+
 /* ==========================
-Hamburger Menu
+Hamburger Button
 ========================== */
 
-.hamburger {
 
-    display: none;
+.menu-toggle {
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#D98CB3;
+
+    font-size:35px;
+
+    cursor:pointer;
 
 }
 
+
+
+
+
 /* ==========================
-Mobile View
+Mobile Navigation
 ========================== */
 
-@media screen and (max-width: 768px) {
 
-    header {
+@media screen and (max-width:768px) {
 
-        flex-wrap: wrap;
 
-        padding: 15px 20px;
+header {
 
-    }
+    padding:15px 20px;
 
-    header img {
+}
 
-        width: 50px;
 
-        height: 50px;
 
-    }
+header img {
 
-    /* Show Hamburger */
+    width:50px;
 
-    .hamburger {
+    height:50px;
 
-        display: block;
+}
 
-        font-size: 35px;
 
-        color: #D98CB3;
 
-        cursor: pointer;
+/* Show hamburger */
 
-    }
+.menu-toggle {
 
-    /* Hide Menu Initially */
+    display:block;
 
-    nav {
+}
 
-        display: none;
 
-        width: 100%;
 
-    }
+/* Hide navigation */
 
-    /* Mobile Navigation */
+nav {
 
-    nav ul {
+    width:100%;
 
-        flex-direction: column;
+}
 
-        width: 100%;
 
-        gap: 0;
 
-        padding-top: 20px;
+nav ul {
 
-    }
+    display:none;
 
-    nav ul li {
+    flex-direction:column;
 
-        width: 100%;
+    width:100%;
 
-    }
+    background:#F7D6E6;
 
-    nav li a {
+    padding:20px 0;
 
-        display: block;
+    margin-top:15px;
 
-        padding: 15px;
+    border-radius:10px;
 
-        font-size: 18px;
+}
 
-    }
 
-    /* Mobile Dropdown */
 
-    nav ul li ul {
+/* When button clicked */
 
-        display: block;
+nav ul.active {
 
-        position: static;
+    display:flex;
 
-        box-shadow: none;
+}
 
-        background-color: #FDECF3;
 
-        min-width: 100%;
 
-        margin-left: 20px;
+nav ul li {
 
-    }
+    width:100%;
 
-    nav ul li ul li a {
+}
 
-        font-size: 16px;
 
-        padding: 10px 15px;
 
-    }
+nav li a {
+
+    font-size:18px;
+
+    padding:15px;
+
+}
+
+
+
+/* Mobile dropdown */
+
+nav ul li ul {
+
+    position:static;
+
+    display:none;
+
+    background:#FDECF3;
+
+    box-shadow:none;
+
+}
+
+
+
+nav ul li:hover > ul {
+
+    display:none;
+
+}
+
+
+
+nav ul li ul li a {
+
+    font-size:16px;
+
+}
+
 
 }
