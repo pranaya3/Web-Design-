@@ -15,7 +15,7 @@ File: project.html
     <title>Career Experience | Pranaya Bollu</title>
 
 
-    <!-- Custom Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +36,22 @@ File: project.html
 
 <header>
 
+
     <img src="logo.png" alt="Pranaya Resume Logo">
 
 
-    <nav>
+    <!-- Mobile Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">
+        ☰
+    </button>
+
+
+
+    <nav id="main-nav">
+
 
         <ul>
+
 
             <li>
                 <a href="index.html">Home</a>
@@ -51,6 +61,7 @@ File: project.html
             <li>
                 <a href="about.html">About</a>
             </li>
+
 
             <li>
                 <a href="project.html">Career</a>
@@ -84,6 +95,7 @@ File: project.html
 
 
 
+
 <main>
 
 
@@ -100,7 +112,10 @@ and prepared me for future career opportunities.
 
 
 
+
 <div class="career-grid">
+
+
 
 
 
@@ -131,7 +146,7 @@ debug errors, and develop confidence using technology.
 
 
 <p>
-<strong>Major Accomplishments:</strong>
+<strong>Major Accomplishments:</strong><br>
 Improved my ability to explain technical concepts, mentor students,
 and solve programming challenges.
 </p>
@@ -139,12 +154,14 @@ and solve programming challenges.
 
 <p>
 This experience strengthened my communication and leadership skills.
-Teaching programming helped me understand how important patience,
-teamwork, and clear explanations are when working in technology.
+Teaching programming helped me understand the importance of patience,
+teamwork, and clear explanations when working in technology.
 </p>
 
 
 </section>
+
+
 
 
 
@@ -177,7 +194,7 @@ successful student programs.
 
 
 <p>
-<strong>Major Accomplishments:</strong>
+<strong>Major Accomplishments:</strong><br>
 Helped create event ideas, increase student engagement, and support
 organization activities.
 </p>
@@ -191,6 +208,8 @@ with teams, and organize projects effectively.
 
 
 </section>
+
+
 
 
 
@@ -223,7 +242,7 @@ technology solutions and improve development skills.
 
 
 <p>
-<strong>Major Accomplishments:</strong>
+<strong>Major Accomplishments:</strong><br>
 Expanded my programming knowledge and gained experience working
 with technology-focused teams.
 </p>
@@ -237,6 +256,8 @@ to learn new tools quickly.
 
 
 </section>
+
+
 
 
 
@@ -269,7 +290,7 @@ organize activities and manage event details.
 
 
 <p>
-<strong>Major Accomplishments:</strong>
+<strong>Major Accomplishments:</strong><br>
 Contributed event ideas, improved organization skills, and worked
 with diverse groups of students.
 </p>
@@ -286,10 +307,12 @@ communication, and collaboration.
 
 
 
+
 </div>
 
 
 </main>
+
 
 
 
@@ -316,6 +339,27 @@ Phone: (636) 274 9586
 
 
 </footer>
+
+
+
+
+
+<script>
+
+const menuButton = document.querySelector(".menu-toggle");
+
+const nav = document.querySelector("#main-nav");
+
+
+menuButton.addEventListener("click", function(){
+
+    nav.classList.toggle("active");
+
+});
+
+</script>
+
+
 
 
 
