@@ -1,6 +1,347 @@
 /* ==========================
-   Product Image Improvements
+   General Website Styling
 ========================== */
+
+
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    margin:0;
+
+    background:#FFF8F5;
+
+    color:#5C4A5A;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* ==========================
+   Navigation Bar
+========================== */
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 50px;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.logo{
+
+    font-family:'Playfair Display', serif;
+
+    color:#D98CB3;
+
+    font-size:28px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#5C4A5A;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#D98CB3;
+
+}
+
+
+
+
+
+
+/* ==========================
+   Header Hero Section
+========================== */
+
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        #F7D6E6,
+        #FFF8F5
+    );
+
+    padding:80px 40px;
+
+    text-align:center;
+
+}
+
+
+
+h1{
+
+    font-family:'Playfair Display', serif;
+
+    color:#D98CB3;
+
+    font-size:50px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+header h3{
+
+    color:#B497D6;
+
+}
+
+
+
+header p{
+
+    max-width:850px;
+
+    margin:20px auto;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Headings
+========================== */
+
+
+h2{
+
+    font-family:'Playfair Display', serif;
+
+    color:#B497D6;
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-top:60px;
+
+}
+
+
+
+h3{
+
+    font-family:'Playfair Display', serif;
+
+    color:#D98CB3;
+
+}
+
+
+
+
+
+
+/* ==========================
+   Sections
+========================== */
+
+
+section{
+
+    padding:50px 40px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+
+section p{
+
+    font-size:16px;
+
+    max-width:900px;
+
+    margin:20px auto;
+
+}
+
+
+
+
+
+/* ==========================
+   Learning Objectives
+========================== */
+
+
+ul{
+
+    background:white;
+
+    padding:35px 50px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/* ==========================
+   Infographic
+========================== */
+
+
+.hero{
+
+    display:block;
+
+    margin:35px auto;
+
+    width:85%;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(217,140,179,.25);
+
+    transition:.3s;
+
+}
+
+
+
+.hero:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+
+
+
+
+/* ==========================
+   Skincare Cards
+========================== */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.1);
+
+
+    transition:.3s ease;
+
+    border:2px solid transparent;
+
+    animation:fadeIn 1s ease;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D98CB3;
+
+    box-shadow:
+    0 15px 30px rgba(217,140,179,.3);
+
+}
+
 
 
 .card img{
@@ -11,13 +352,13 @@
 
     object-fit:contain;
 
-    border-radius:20px;
-
     background:#FFF8F5;
 
     padding:10px;
 
-    transition:.3s ease;
+    border-radius:20px;
+
+    transition:.3s;
 
 }
 
@@ -33,24 +374,101 @@
 
 
 
+
+
 /* ==========================
-   Media Containers
+   Video Section
 ========================== */
 
 
-video,
-audio{
+video{
 
-    margin-top:20px;
+    display:block;
+
+    width:80%;
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
 
 }
 
 
 
 
+
+
+
 /* ==========================
-   Quiz Button
+   Audio Section
 ========================== */
+
+
+audio{
+
+    display:block;
+
+    margin:30px auto;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Quiz Styling
+========================== */
+
+
+form{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.question{
+
+    background:#FCEAF3;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin:12px;
+
+    cursor:pointer;
+
+}
+
+
+
 
 
 button{
@@ -71,11 +489,11 @@ button{
 
     font-size:16px;
 
-    font-family:'Poppins', sans-serif;
+    font-family:'Poppins',sans-serif;
 
     cursor:pointer;
 
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
@@ -104,16 +522,26 @@ button:hover{
 
 
 
+
+
 /* ==========================
-   Better Paragraph Styling
+   Footer
 ========================== */
 
 
-section p{
+footer{
 
-    max-width:900px;
+    margin-top:70px;
 
-    margin:20px auto;
+    background:#F7D6E6;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#5C4A5A;
+
+    font-weight:500;
 
 }
 
@@ -121,18 +549,10 @@ section p{
 
 
 
+
 /* ==========================
-   Image Fade Animation
+   Animations
 ========================== */
-
-
-.hero,
-.card{
-
-    animation:fadeIn 1s ease;
-
-}
-
 
 
 @keyframes fadeIn{
@@ -159,19 +579,51 @@ transform:translateY(0);
 
 
 
+
+
+
 /* ==========================
-   Mobile Improvements
+   Mobile Responsive Design
 ========================== */
 
 
 @media(max-width:700px){
 
 
+nav{
+
+    flex-direction:column;
+
+}
+
+
+
 nav ul{
+
+    flex-direction:column;
 
     text-align:center;
 
+    padding:10px;
+
 }
+
+
+
+h1{
+
+    font-size:36px;
+
+}
+
+
+
+section{
+
+    padding:30px 20px;
+
+}
+
 
 
 .cards{
@@ -179,6 +631,23 @@ nav ul{
     grid-template-columns:1fr;
 
 }
+
+
+
+.hero{
+
+    width:100%;
+
+}
+
+
+
+video{
+
+    width:100%;
+
+}
+
 
 
 .card img{
