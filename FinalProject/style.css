@@ -1,143 +1,505 @@
+/* ==========================
+   General Website Styling
+========================== */
+
+
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+
 body{
 
-font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
 
-margin:0;
+    margin:0;
 
-background:#FFF8F5;
+    background:#FFF8F5;
 
-color:#444;
+    color:#5C4A5A;
 
-line-height:1.8;
+    line-height:1.8;
 
 }
+
+
+
+/* ==========================
+   Navigation Bar
+========================== */
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 50px;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.logo{
+
+    font-family:'Playfair Display', serif;
+
+    color:#D98CB3;
+
+    font-size:28px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#5C4A5A;
+
+    font-weight:500;
+
+}
+
+
+
+nav a:hover{
+
+    color:#D98CB3;
+
+}
+
+
+
+
+/* ==========================
+   Header Hero Section
+========================== */
+
 
 header{
 
-background:#F7D6E6;
+    background:linear-gradient(
+        135deg,
+        #F7D6E6,
+        #FFF8F5
+    );
 
-padding:50px;
+    padding:80px 40px;
 
-text-align:center;
+    text-align:center;
 
 }
+
+
 
 h1{
 
-color:#D98CB3;
+    font-family:'Playfair Display', serif;
 
-font-size:42px;
+    color:#D98CB3;
+
+    font-size:50px;
+
+    letter-spacing:2px;
 
 }
+
+
+
+header p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* ==========================
+   Headings
+========================== */
+
 
 h2{
 
-color:#B497D6;
+    font-family:'Playfair Display', serif;
 
-margin-top:50px;
+    color:#B497D6;
 
-text-align:center;
+    margin-top:60px;
+
+    text-align:center;
+
+    font-size:35px;
 
 }
+
+
+
+h3{
+
+    font-family:'Playfair Display', serif;
+
+    color:#D98CB3;
+
+}
+
+
+
+/* ==========================
+   Sections
+========================== */
+
 
 section{
 
-padding:40px;
+    padding:50px 40px;
 
-max-width:1100px;
+    max-width:1100px;
 
-margin:auto;
+    margin:auto;
 
 }
+
+
+
+
+/* ==========================
+   Learning Objectives
+========================== */
+
+
+ul{
+
+    background:white;
+
+    padding:35px 50px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/* ==========================
+   Infographic
+========================== */
+
 
 .hero{
 
-display:block;
+    display:block;
 
-margin:auto;
+    margin:35px auto;
 
-width:80%;
+    width:85%;
 
-border-radius:15px;
+    border-radius:20px;
 
-box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    box-shadow:
+    0 10px 25px rgba(217,140,179,.25);
 
 }
+
+
+
+
+/* ==========================
+   Skincare Cards
+========================== */
+
 
 .cards{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
 
-gap:25px;
+    gap:30px;
 
-margin-top:30px;
+    margin-top:40px;
 
 }
+
+
 
 .card{
 
-background:white;
+    background:white;
 
-padding:20px;
+    padding:30px;
 
-border-radius:15px;
+    border-radius:25px;
 
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+    text-align:center;
 
-text-align:center;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.1);
+
+
+    transition:.3s ease;
+
+    border:2px solid transparent;
 
 }
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D98CB3;
+
+    box-shadow:
+    0 15px 30px rgba(217,140,179,.3);
+
+}
+
+
 
 .card img{
 
-width:120px;
+    width:130px;
 
-height:120px;
+    height:130px;
 
-object-fit:cover;
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
 
 }
+
+
+
+
+
+/* ==========================
+   Video Section
+========================== */
+
 
 video{
 
-display:block;
+    display:block;
 
-margin:auto;
+    width:80%;
 
-border-radius:10px;
+    max-width:750px;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
 
 }
+
+
+
+
+/* ==========================
+   Audio
+========================== */
+
 
 audio{
 
-display:block;
+    display:block;
 
-margin:auto;
+    margin:30px auto;
 
 }
+
+
+
+
+
+/* ==========================
+   Quiz
+========================== */
+
 
 form{
 
-background:white;
+    background:white;
 
-padding:30px;
+    padding:40px;
 
-border-radius:15px;
+    border-radius:25px;
 
-box-shadow:0px 5px 15px rgba(0,0,0,.1);
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.1);
 
 }
 
+
+
+.question{
+
+    background:#FCEAF3;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin:10px;
+
+}
+
+
+
+
+
+/* ==========================
+   Digital Media Section
+========================== */
+
+
+section p{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ==========================
+   Footer
+========================== */
+
+
 footer{
 
-margin-top:60px;
+    margin-top:70px;
 
-background:#F7D6E6;
+    background:#F7D6E6;
 
-padding:20px;
+    padding:35px;
 
-text-align:center;
+    text-align:center;
+
+    color:#5C4A5A;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+/* ==========================
+   Mobile Responsive Design
+========================== */
+
+
+@media(max-width:700px){
+
+
+nav{
+
+    flex-direction:column;
+
+}
+
+
+
+nav ul{
+
+    flex-direction:column;
+
+    gap:10px;
+
+    padding:10px;
+
+}
+
+
+
+h1{
+
+    font-size:36px;
+
+}
+
+
+
+section{
+
+    padding:30px 20px;
+
+}
+
+
+
+.hero{
+
+    width:100%;
+
+}
+
+
+
+video{
+
+    width:100%;
+
+}
+
 
 }
