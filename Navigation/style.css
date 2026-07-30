@@ -2,6 +2,16 @@
 General Website Styling
 ========================== */
 
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
 
     margin:0;
@@ -12,14 +22,14 @@ body {
 
     color:#5C4A5A;
 
+    line-height:1.6;
+
 }
 
 
 main {
 
     padding:40px;
-
-    text-align:center;
 
 }
 
@@ -31,6 +41,8 @@ h1 {
     font-size:36px;
 
     letter-spacing:2px;
+
+    text-align:center;
 
     text-shadow:2px 2px 8px rgba(217,140,179,.5);
 
@@ -61,7 +73,14 @@ p {
 
     font-size:18px;
 
-    line-height:1.6;
+}
+
+
+img {
+
+    max-width:100%;
+
+    height:auto;
 
 }
 
@@ -78,7 +97,7 @@ Home Page
 
     text-align:center;
 
-    padding:40px;
+    padding:40px 20px;
 
 }
 
@@ -88,8 +107,6 @@ Home Page
     width:100%;
 
     max-width:850px;
-
-    height:auto;
 
     border-radius:15px;
 
@@ -119,8 +136,6 @@ Home Page
 
     margin:50px auto;
 
-    text-align:left;
-
 }
 
 
@@ -129,6 +144,8 @@ Home Page
     max-width:700px;
 
     margin:50px auto;
+
+    text-align:center;
 
 }
 
@@ -177,7 +194,6 @@ About Page
     text-align:center;
 
 }
-
 
 
 .profile-image {
@@ -244,8 +260,6 @@ Career Page
 
     transform:translateY(-5px);
 
-    box-shadow:0 5px 15px rgba(217,140,179,.3);
-
 }
 
 
@@ -277,7 +291,7 @@ Career Page
 
 
 /* ==========================
-Reflection Page
+Reflection
 ========================== */
 
 
@@ -304,8 +318,6 @@ Reflection Page
 
     border:2px solid #D98CB3;
 
-    box-shadow:0 5px 15px rgba(217,140,179,.2);
-
 }
 
 
@@ -320,7 +332,7 @@ Reflection Page
 
 
 /* ==========================
-Skills Page
+Skills
 ========================== */
 
 
@@ -347,8 +359,6 @@ Skills Page
 
 
 .skills-table caption {
-
-    caption-side:top;
 
     font-size:22px;
 
@@ -383,32 +393,11 @@ Skills Page
 }
 
 
-.skills-table tbody tr:nth-child(odd) {
-
-    background:#FFF8F5;
-
-}
-
-
-.skills-table tbody tr:nth-child(even) {
-
-    background:#F8F0FF;
-
-}
-
-
-.skills-table tfoot {
-
-    background:#FCE4EC;
-
-}
-
-
 
 
 
 /* ==========================
-Contact Page
+Contact
 ========================== */
 
 
@@ -434,10 +423,6 @@ form {
     border-radius:15px;
 
     border:2px solid #D98CB3;
-
-    box-shadow:0 5px 15px rgba(217,140,179,.2);
-
-    text-align:left;
 
 }
 
@@ -466,8 +451,6 @@ textarea {
 
     border-radius:8px;
 
-    box-sizing:border-box;
-
     font-family:"Poppins",Arial,sans-serif;
 
 }
@@ -491,8 +474,6 @@ textarea {
 
     border:1px solid #D98CB3;
 
-    margin-top:10px;
-
 }
 
 
@@ -504,23 +485,11 @@ textarea {
 }
 
 
-.radio-options label,
-.checkbox-options label {
-
-    display:inline;
-
-    font-weight:normal;
-
-    margin-right:15px;
-
-}
-
-
 button {
 
     margin-top:20px;
 
-    padding:12px 30px;
+    padding:14px 35px;
 
     background:#D98CB3;
 
@@ -532,29 +501,14 @@ button {
 
     cursor:pointer;
 
+    font-size:16px;
+
 }
 
 
 button:hover {
 
     background:#B497D6;
-
-}
-
-
-
-
-
-/* ==========================
-Images
-========================== */
-
-
-img {
-
-    max-width:100%;
-
-    height:auto;
 
 }
 
@@ -586,11 +540,7 @@ footer {
 
 .footer-icon {
 
-    display:inline-block;
-
     font-size:22px;
-
-    margin-right:8px;
 
     transition:.3s;
 
@@ -601,8 +551,6 @@ footer {
 
     transform:scale(1.4);
 
-    color:#D98CB3;
-
 }
 
 
@@ -610,29 +558,18 @@ footer {
 
 
 /* ==========================
-Mobile Responsive Design
+Tablet
 ========================== */
 
 
-@media screen and (max-width:768px) {
-
-
-main {
-
-    padding:20px;
-
-}
-
+@media screen and (max-width:900px) {
 
 
 .about-grid {
 
     grid-template-columns:1fr;
 
-    padding:20px;
-
 }
-
 
 
 .career-grid {
@@ -642,33 +579,39 @@ main {
 }
 
 
-
-.reflection-card {
-
-    padding:25px;
-
 }
 
 
 
-.skills-table {
 
-    display:block;
 
-    overflow-x:auto;
+/* ==========================
+Mobile Phones
+========================== */
 
-    white-space:nowrap;
+
+@media screen and (max-width:600px) {
+
+
+main {
+
+    padding:15px;
 
 }
-
 
 
 h1 {
 
-    font-size:30px;
+    font-size:28px;
 
 }
 
+
+h2 {
+
+    font-size:22px;
+
+}
 
 
 p {
@@ -681,7 +624,68 @@ p {
 
 .hero-section {
 
+    padding:20px 5px;
+
+}
+
+
+
+.hero-image {
+
+    border-width:2px;
+
+}
+
+
+
+.about-grid {
+
+    padding:10px;
+
+}
+
+
+
+.reflection-card {
+
     padding:20px;
+
+}
+
+
+
+form {
+
+    padding:20px;
+
+}
+
+
+
+.career-card {
+
+    padding:20px;
+
+}
+
+
+
+.skills-table {
+
+    display:block;
+
+    overflow-x:auto;
+
+    font-size:14px;
+
+}
+
+
+
+.skills-table th,
+.skills-table td {
+
+    padding:10px;
 
 }
 
@@ -692,63 +696,26 @@ p {
 
     display:block;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
 }
 
 
 
-}
+button {
 
-
-
-/* ==========================
-Print Styling
-========================== */
-
-
-@media print {
-
-
-body {
-
-    background:white;
-
-    color:black;
-
-    font-family:Georgia,"Times New Roman",serif;
+    width:100%;
 
 }
 
-
-header,
-nav,
-img,
-video {
-
-    display:none;
-
-}
-
-
-h1,
-h2,
-h3,
-p,
-li {
-
-    color:black;
-
-}
 
 
 footer {
 
-    background:none;
-
-    color:black;
+    padding:20px 10px;
 
 }
+
 
 
 }
