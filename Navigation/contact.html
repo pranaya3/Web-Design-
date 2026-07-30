@@ -12,104 +12,63 @@ File: contact.html
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Contact | Pranaya Bollu</title>
-
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
+    <!-- CSS -->
     <link rel="stylesheet" href="nav.css">
-
     <link rel="stylesheet" href="style.css">
-
 
 </head>
 
-
 <body>
-
 
 <header>
 
-
     <img src="logo.png" alt="Pranaya Resume Logo">
 
-
-
     <!-- Mobile Hamburger -->
-
-    <button class="menu-toggle" aria-label="Open navigation menu">
-
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="main-nav"
+        aria-expanded="false">
         ☰
-
     </button>
 
-
-
-
-    <nav>
-
+    <nav id="main-nav">
 
         <ul>
 
+            <li><a href="index.html">Home</a></li>
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+            <li><a href="about.html">About</a></li>
 
+            <li><a href="project.html">Career</a></li>
 
-            <li>
-                <a href="about.html">About</a>
-            </li>
+            <li><a href="reflection.html">Reflection</a></li>
 
+            <li><a href="skills.html">Skills</a></li>
 
-            <li>
-                <a href="project.html">Career</a>
-            </li>
-
-
-            <li>
-                <a href="reflection.html">Reflection</a>
-            </li>
-
-
-            <li>
-                <a href="skills.html">Skills</a>
-            </li>
-
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
+            <li><a href="contact.html">Contact</a></li>
 
         </ul>
 
-
     </nav>
-
 
 </header>
 
-
-
-
-
 <main>
-
 
 <section class="contact-section">
 
-
 <h1>Contact Me</h1>
-
 
 <p>
 If you have questions, would like to discuss my projects,
@@ -117,32 +76,18 @@ or want to learn more about my experience, please complete
 the form below.
 </p>
 
-
-
-
-
 <form>
 
+<label for="first-name">First Name:</label>
 
-<label for="first-name">
-First Name:
-</label>
-
-
-<input 
+<input
 type="text"
 id="first-name"
 name="first-name"
 placeholder="Enter your first name"
 required>
 
-
-
-
-<label for="last-name">
-Last Name:
-</label>
-
+<label for="last-name">Last Name:</label>
 
 <input
 type="text"
@@ -151,13 +96,7 @@ name="last-name"
 placeholder="Enter your last name"
 required>
 
-
-
-
-<label for="email">
-Email Address:
-</label>
-
+<label for="email">Email Address:</label>
 
 <input
 type="email"
@@ -166,30 +105,17 @@ name="email"
 placeholder="Enter your email"
 required>
 
-
-
-
-
-<label>
-Reason for Contact:
-</label>
-
+<label>Reason for Contact:</label>
 
 <div class="radio-options">
 
-
-<input 
+<input
 type="radio"
 id="question"
 name="contact-reason"
 value="question">
 
-
-<label for="question">
-General Question
-</label>
-
-
+<label for="question">General Question</label>
 
 <input
 type="radio"
@@ -197,12 +123,7 @@ id="project"
 name="contact-reason"
 value="project">
 
-
-<label for="project">
-Project Discussion
-</label>
-
-
+<label for="project">Project Discussion</label>
 
 <input
 type="radio"
@@ -210,26 +131,13 @@ id="career"
 name="contact-reason"
 value="career">
 
-
-<label for="career">
-Career Opportunity
-</label>
-
+<label for="career">Career Opportunity</label>
 
 </div>
 
-
-
-
-
-
-<label>
-Topics You Are Interested In:
-</label>
-
+<label>Topics You Are Interested In:</label>
 
 <div class="checkbox-options">
-
 
 <input
 type="checkbox"
@@ -237,12 +145,7 @@ id="web"
 name="topics"
 value="web">
 
-
-<label for="web">
-Web Development
-</label>
-
-
+<label for="web">Web Development</label>
 
 <input
 type="checkbox"
@@ -250,12 +153,7 @@ id="technology"
 name="topics"
 value="technology">
 
-
-<label for="technology">
-Information Technology
-</label>
-
-
+<label for="technology">Information Technology</label>
 
 <input
 type="checkbox"
@@ -263,24 +161,11 @@ id="resume"
 name="topics"
 value="resume">
 
-
-<label for="resume">
-Resume Feedback
-</label>
-
+<label for="resume">Resume Feedback</label>
 
 </div>
 
-
-
-
-
-
-
-<label for="message">
-Message:
-</label>
-
+<label for="message">Message:</label>
 
 <textarea
 id="message"
@@ -288,93 +173,49 @@ name="message"
 placeholder="Enter your message here"
 required></textarea>
 
-
-
-
-
-
 <button type="submit">
-
 Submit
-
 </button>
-
-
 
 </form>
 
-
 </section>
-
 
 </main>
 
-
-
-
-
-
-
 <footer>
 
-
 <p>
-
 <span class="footer-icon">✉️</span>
-
 Email: psbn8m@umsystem.edu
-
 </p>
 
-
-
 <p>
-
 <span class="footer-icon">📞</span>
-
 Phone: (636) 274-9586
-
 </p>
-
-
 
 <p>
-
 &copy; 2026 Pranaya Bollu. All Rights Reserved.
-
 </p>
-
 
 </footer>
 
-
-
-
-
-
-
 <script>
 
-
 const menuButton = document.querySelector(".menu-toggle");
-
-const navMenu = document.querySelector("nav");
-
-
+const navMenu = document.querySelector("#main-nav");
 
 menuButton.addEventListener("click", () => {
 
-
     navMenu.classList.toggle("active");
 
+    const expanded = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", !expanded);
 
 });
 
-
 </script>
 
-
-
 </body>
-
 </html>
