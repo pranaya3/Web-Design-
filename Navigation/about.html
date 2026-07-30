@@ -14,7 +14,6 @@ File: about.html
 
     <title>About | Pranaya Bollu</title>
 
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -22,95 +21,57 @@ File: about.html
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
     <!-- CSS -->
     <link rel="stylesheet" href="nav.css">
-
     <link rel="stylesheet" href="style.css">
-
 
 </head>
 
-
 <body>
-
 
 <header>
 
-
-    <img src="logo.png" alt="Pranaya Resume Logo">
-
+    <img src="logo.png" alt="Pranaya Bollu Resume Logo">
 
     <!-- Mobile Hamburger Button -->
-    <button class="menu-toggle" aria-label="Open navigation menu">
+    <button class="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-controls="main-nav"
+            aria-expanded="false">
         ☰
     </button>
 
-
-
     <nav id="main-nav">
-
 
         <ul>
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+            <li><a href="index.html">Home</a></li>
 
+            <li><a href="about.html">About</a></li>
 
-            <li>
-                <a href="about.html">About</a>
-            </li>
+            <li><a href="project.html">Career</a></li>
 
+            <li><a href="reflection.html">Reflection</a></li>
 
-            <li>
-                <a href="project.html">Career</a>
-            </li>
+            <li><a href="skills.html">Skills</a></li>
 
-
-            <li>
-                <a href="reflection.html">Reflection</a>
-            </li>
-
-
-            <li>
-                <a href="skills.html">Skills</a>
-            </li>
-
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
+            <li><a href="contact.html">Contact</a></li>
 
         </ul>
 
-
     </nav>
-
 
 </header>
 
-
-
-
-
 <main class="about-grid">
-
 
 <section class="about-text">
 
-
 <h1>About Me</h1>
-
-
 
 <h2>Professional Overview</h2>
 
-
-
 <p>
-
 I am Pranaya Bollu, an Information Technology student passionate about web
 development, programming, and creating effective digital experiences.
 Through my coursework and projects, I have developed skills in HTML, CSS,
@@ -121,173 +82,94 @@ expanding my technical knowledge while developing professional skills that
 allow me to contribute to innovative technology projects. I am interested
 in building user-friendly websites, improving my programming abilities,
 and gaining experience in the Information Technology field.
-
 </p>
-
-
-
 
 <h2>Education & Credentials</h2>
 
-
-
 <ul>
-
     <li>Bachelor's Degree in Information Technology</li>
-
     <li>Web Design and Development Coursework</li>
-
     <li>Programming and Software Development Coursework</li>
-
     <li>Database Systems and Networking Coursework</li>
-
     <li>Cybersecurity Fundamentals</li>
-
 </ul>
 
-
-
-
-
 <h2>Resume</h2>
-
-
 
 <p>
 View my professional resume below:
 </p>
 
-
-
-<a href="media/Pranaya_Bollu_Resume.pdf" target="_blank">
-
-Download Resume PDF
-
+<a href="media/Pranaya_Bollu_Resume.pdf"
+   target="_blank"
+   rel="noopener">
+    Download Resume PDF
 </a>
-
-
 
 </section>
 
-
-
-
-
-
 <section class="about-media">
 
-
 <h2>Professional Photo</h2>
-
-
 
 <img src="media/profile.jpg"
      alt="Professional headshot of Pranaya Bollu"
      class="profile-image">
 
-
-
-
-
 <h2>Professional Introduction Video</h2>
-
-
 
 <figure>
 
-
 <video controls class="resume-video">
-
 
 <source src="media/resume-video.mp4" type="video/mp4">
 
-
 Your browser does not support the video tag.
-
 
 </video>
 
-
-
 <figcaption>
-
 Professional introduction video highlighting my background,
 skills, and career goals.
-
 </figcaption>
-
-
 
 </figure>
 
-
-
 </section>
-
-
 
 </main>
 
-
-
-
-
-
 <footer>
 
-
 <p>
-
 <span class="footer-icon">✉️</span>
-
 Email: psbn8m@umsystem.edu
-
 </p>
 
-
-
 <p>
-
 <span class="footer-icon">📞</span>
-
-Phone: (636) 274 9586
-
+Phone: (636) 274-9586
 </p>
-
-
 
 <p>
-
 &copy; 2026 Pranaya Bollu. All Rights Reserved.
-
 </p>
-
-
 
 </footer>
-
-
-
-
 
 <!-- Mobile Menu Script -->
 
 <script>
-
 const menuButton = document.querySelector(".menu-toggle");
-
 const nav = document.querySelector("#main-nav");
 
-
-menuButton.addEventListener("click", function(){
-
+menuButton.addEventListener("click", () => {
     nav.classList.toggle("active");
 
+    const expanded = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", !expanded);
 });
-
 </script>
-
-
 
 </body>
 
