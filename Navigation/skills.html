@@ -12,9 +12,10 @@ File: skills.html
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <title>Skills | Pranaya Bollu</title>
 
+
+<!-- Google Font -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -23,6 +24,8 @@ File: skills.html
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+
+<!-- CSS -->
 
 <link rel="stylesheet" href="nav.css">
 
@@ -44,7 +47,13 @@ File: skills.html
 
 
 
-<button class="menu-toggle" aria-label="Open navigation menu">
+<!-- Mobile Menu Button -->
+
+<button
+class="menu-toggle"
+aria-label="Open navigation menu"
+aria-controls="main-nav"
+aria-expanded="false">
 
 ☰
 
@@ -319,9 +328,13 @@ const nav = document.querySelector("#main-nav");
 
 
 
-menuButton.addEventListener("click", function(){
+menuButton.addEventListener("click", () => {
 
     nav.classList.toggle("active");
+
+    const expanded = menuButton.getAttribute("aria-expanded") === "true";
+
+    menuButton.setAttribute("aria-expanded", !expanded);
 
 });
 
